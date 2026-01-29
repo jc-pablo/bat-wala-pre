@@ -45,6 +45,7 @@ Partial Class Form15
         '
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.ButtonShadow
         Me.MenuStrip1.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.AboutUsToolStripMenuItem, Me.EditToolStripMenuItem, Me.HelpToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
@@ -124,7 +125,7 @@ Partial Class Form15
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(79, 373)
+        Me.Button1.Location = New System.Drawing.Point(95, 336)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(146, 44)
         Me.Button1.TabIndex = 4
