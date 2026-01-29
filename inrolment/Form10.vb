@@ -32,4 +32,19 @@
     Private Sub Form10_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub LinkLabel6_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel6.LinkClicked
+        Form6.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub LinkLabel7_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel7.LinkClicked
+        Form8.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub LinkLabel8_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel8.LinkClicked
+        Form14.Show()
+        Me.Hide()
+    End Sub
 End Class
