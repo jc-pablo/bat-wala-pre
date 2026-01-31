@@ -81,8 +81,11 @@
 
         dtLibrary.Rows.Add(False, "A History of the Philippines for Young Readers", "Gregorio F. Zaide", "1983", "Available", "Book", 1)
         dtLibrary.Rows.Add(False, "Animal Math: Cheetah Math", "Ann WhiteheadNagda", "2007", "Available", "Book", 1)
+        dtLibrary.Rows.Add(False, "Berenstain Bears and the Spelling Bee", "Stan & Jan Berenstain", "1983", "Available", "Book", 1)
         dtLibrary.Rows.Add(False, "Charlotte's Web", "Elwyn Brooks White", "1952", "Available", "Book", 1)
+        dtLibrary.Rows.Add(False, "Diary Of A Wimpy Kid", "Jeff Kinney", "2007", "Available", "Book", 1)
         dtLibrary.Rows.Add(False, "Each Kindness", "Jacqueline Woodson", "2012", "Available", "Book", 1)
+        dtLibrary.Rows.Add(False, "Flat Stanley", "Jeff Brown", "1964", "Available", "Book", 1)
         dtLibrary.Rows.Add(False, "Have You Filled a Bucket Today?", "Carol McCloud", "2006", "Available", "Book", 1)
         dtLibrary.Rows.Add(False, "Math Curse", "Jon Scieszka", "1995", "Available", "Book", 1)
         dtLibrary.Rows.Add(False, "Murderous Maths", "Jon Scieszka", "1995", "Available", "Book", 1)
@@ -93,7 +96,12 @@
         dtLibrary.Rows.Add(False, "The Berenstain Bears and the Spelling Bee", "S. Berenstain & J. Berenstain", "1983", "Available", "Book", 1)
         dtLibrary.Rows.Add(False, "The Boxcar Children", "Gertrude Chandler Warner", "1924", "Available", "Book", 1)
         dtLibrary.Rows.Add(False, "The Magic School Bus Inside the Human Body", "Joanna Cole", "1989", "Available", "Book", 1)
+        dtLibrary.Rows.Add(False, "Under the Sea", "Anna Milbourne", "2013", "Available", "Book", 1)
+        dtLibrary.Rows.Add(False, "Values Formation for Filipino Children", "DepEd-aligned reading", "2017", "Available", "Book", 1)
         dtLibrary.Rows.Add(False, "Where the Wild Things Are", "Maurice Bernard Sendak", "1963", "Available", "Book", 1)
+        dtLibrary.Rows.Add(False, "Xander’s Panda Party", "Linda Sue Park", "2015", "Available", "Book", 1)
+        dtLibrary.Rows.Add(False, "You Are Special", "Max Lucado", "1997", "Available", "Book", 1)
+        dtLibrary.Rows.Add(False, "Zoo-ology", "Ben Newman", "2017", "Available", "Book", 1)
         dtLibrary.Rows.Add(False, "Pencil", "", "", "Available", "Supplies", 20)
         dtLibrary.Rows.Add(False, "Eraser", "", "", "Available", "Supplies", 16)
         dtLibrary.Rows.Add(False, "Crayons (24 Colors)", "", "", "Available", "Supplies", 7)
@@ -108,6 +116,10 @@
         dtLibrary.Rows.Add(False, "Sketch Pad", "", "", "Available", "Supplies", 6)
         dtLibrary.Rows.Add(False, "Highlighters", "", "", "Available", "Supplies", 30)
         dtLibrary.Rows.Add(False, "Whiteboard", "", "", "Available", "Supplies", 15)
+        dtLibrary.Rows.Add(False, "Whiteboard Markers", "", "", "Available", "Supplies", 15)
+        dtLibrary.Rows.Add(False, "Flashcards", "", "", "Available", "Supplies", 40)
+        dtLibrary.Rows.Add(False, "Chalk", "", "", "Available", "Supplies", 50)
+
 
 
 
@@ -267,6 +279,11 @@
 
     Private Sub LinkLabel5_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel5.LinkClicked
         Form3.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Form15.Show()
         Me.Hide()
     End Sub
 End Class
