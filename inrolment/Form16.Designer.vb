@@ -25,12 +25,12 @@ Partial Class Form16
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form16))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.GameToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ModeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StartExplorationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ModeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SoloExplorerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RivalAIToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HowToPlayToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutUsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
@@ -57,6 +57,24 @@ Partial Class Form16
         Me.GameToolStripMenuItem.Size = New System.Drawing.Size(636, 81)
         Me.GameToolStripMenuItem.Text = "Game"
         '
+        'StartExplorationToolStripMenuItem
+        '
+        Me.StartExplorationToolStripMenuItem.BackColor = System.Drawing.Color.MistyRose
+        Me.StartExplorationToolStripMenuItem.Font = New System.Drawing.Font("Nirmala Text", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StartExplorationToolStripMenuItem.ForeColor = System.Drawing.Color.Maroon
+        Me.StartExplorationToolStripMenuItem.Name = "StartExplorationToolStripMenuItem"
+        Me.StartExplorationToolStripMenuItem.Size = New System.Drawing.Size(311, 44)
+        Me.StartExplorationToolStripMenuItem.Text = "Meteor Dodger"
+        '
+        'ExitToolStripMenuItem
+        '
+        Me.ExitToolStripMenuItem.BackColor = System.Drawing.Color.MistyRose
+        Me.ExitToolStripMenuItem.Font = New System.Drawing.Font("Nirmala Text", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ExitToolStripMenuItem.ForeColor = System.Drawing.Color.Maroon
+        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(311, 44)
+        Me.ExitToolStripMenuItem.Text = "Treasure Fight"
+        '
         'ModeToolStripMenuItem
         '
         Me.ModeToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SoloExplorerToolStripMenuItem, Me.RivalAIToolStripMenuItem})
@@ -66,34 +84,6 @@ Partial Class Form16
         Me.ModeToolStripMenuItem.Padding = New System.Windows.Forms.Padding(4, 0, 500, 0)
         Me.ModeToolStripMenuItem.Size = New System.Drawing.Size(631, 81)
         Me.ModeToolStripMenuItem.Text = "Mode"
-        '
-        'HelpToolStripMenuItem
-        '
-        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HowToPlayToolStripMenuItem, Me.AboutUsToolStripMenuItem})
-        Me.HelpToolStripMenuItem.Font = New System.Drawing.Font("Nirmala Text", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HelpToolStripMenuItem.ForeColor = System.Drawing.Color.White
-        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Padding = New System.Windows.Forms.Padding(4, 0, 500, 0)
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(612, 81)
-        Me.HelpToolStripMenuItem.Text = "Help"
-        '
-        'StartExplorationToolStripMenuItem
-        '
-        Me.StartExplorationToolStripMenuItem.BackColor = System.Drawing.Color.MistyRose
-        Me.StartExplorationToolStripMenuItem.Font = New System.Drawing.Font("Nirmala Text", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.StartExplorationToolStripMenuItem.ForeColor = System.Drawing.Color.Maroon
-        Me.StartExplorationToolStripMenuItem.Name = "StartExplorationToolStripMenuItem"
-        Me.StartExplorationToolStripMenuItem.Size = New System.Drawing.Size(331, 44)
-        Me.StartExplorationToolStripMenuItem.Text = "Start Exploration"
-        '
-        'ExitToolStripMenuItem
-        '
-        Me.ExitToolStripMenuItem.BackColor = System.Drawing.Color.MistyRose
-        Me.ExitToolStripMenuItem.Font = New System.Drawing.Font("Nirmala Text", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ExitToolStripMenuItem.ForeColor = System.Drawing.Color.Maroon
-        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(331, 44)
-        Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'SoloExplorerToolStripMenuItem
         '
@@ -112,6 +102,16 @@ Partial Class Form16
         Me.RivalAIToolStripMenuItem.Name = "RivalAIToolStripMenuItem"
         Me.RivalAIToolStripMenuItem.Size = New System.Drawing.Size(282, 44)
         Me.RivalAIToolStripMenuItem.Text = "Rival AI"
+        '
+        'HelpToolStripMenuItem
+        '
+        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HowToPlayToolStripMenuItem, Me.AboutUsToolStripMenuItem})
+        Me.HelpToolStripMenuItem.Font = New System.Drawing.Font("Nirmala Text", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HelpToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
+        Me.HelpToolStripMenuItem.Padding = New System.Windows.Forms.Padding(4, 0, 500, 0)
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(612, 81)
+        Me.HelpToolStripMenuItem.Text = "Help"
         '
         'HowToPlayToolStripMenuItem
         '
