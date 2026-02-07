@@ -39,6 +39,7 @@ Partial Class Form25
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -55,6 +56,7 @@ Partial Class Form25
         Me.Panel1.AutoScroll = True
         Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel1.Controls.Add(Me.Button2)
         Me.Panel1.Controls.Add(Me.PictureBox8)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.Label6)
@@ -239,6 +241,18 @@ Partial Class Form25
         Me.PictureBox8.TabIndex = 17
         Me.PictureBox8.TabStop = False
         '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.SteelBlue
+        Me.Button2.Font = New System.Drawing.Font("Nirmala Text", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.White
+        Me.Button2.Location = New System.Drawing.Point(1697, 1599)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(199, 64)
+        Me.Button2.TabIndex = 18
+        Me.Button2.Text = "Back"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
         'Form25
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -279,4 +293,5 @@ Partial Class Form25
     Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents PictureBox8 As PictureBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 End Class
