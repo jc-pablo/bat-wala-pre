@@ -9,4 +9,12 @@
         Me.Hide()
     End Sub
 
+
+    Private Sub SoloExplorerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SoloExplorerToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub RivalAIToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RivalAIToolStripMenuItem.Click
+
+    End Sub
 End Class

@@ -59,16 +59,16 @@ Partial Class Form4
         'TableLayoutPanel2
         '
         Me.TableLayoutPanel2.ColumnCount = 11
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.79361!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.38002!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.784603!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.59541!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.698608!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.98771!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.521703!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.05651!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.586405!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.59541!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.194103!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.31532!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.030303!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.98362!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.439803!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.40131!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.371007!))
         Me.TableLayoutPanel2.Controls.Add(Me.LinkLabel2, 3, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.LinkLabel3, 5, 1)
@@ -93,10 +93,10 @@ Partial Class Form4
         Me.LinkLabel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LinkLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel2.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel2.Location = New System.Drawing.Point(380, 44)
+        Me.LinkLabel2.Location = New System.Drawing.Point(322, 44)
         Me.LinkLabel2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(162, 102)
+        Me.LinkLabel2.Size = New System.Drawing.Size(131, 102)
         Me.LinkLabel2.TabIndex = 1
         Me.LinkLabel2.TabStop = True
         Me.LinkLabel2.Text = "Store"
@@ -108,7 +108,7 @@ Partial Class Form4
         Me.LinkLabel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LinkLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel3.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel3.Location = New System.Drawing.Point(589, 44)
+        Me.LinkLabel3.Location = New System.Drawing.Point(513, 44)
         Me.LinkLabel3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LinkLabel3.Name = "LinkLabel3"
         Me.LinkLabel3.Size = New System.Drawing.Size(162, 102)
@@ -123,13 +123,13 @@ Partial Class Form4
         Me.LinkLabel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LinkLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel4.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel4.Location = New System.Drawing.Point(794, 44)
+        Me.LinkLabel4.Location = New System.Drawing.Point(716, 44)
         Me.LinkLabel4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LinkLabel4.Name = "LinkLabel4"
-        Me.LinkLabel4.Size = New System.Drawing.Size(183, 102)
+        Me.LinkLabel4.Size = New System.Drawing.Size(240, 102)
         Me.LinkLabel4.TabIndex = 3
         Me.LinkLabel4.TabStop = True
-        Me.LinkLabel4.Text = "Enroll Now"
+        Me.LinkLabel4.Text = "Enroll && Activities"
         Me.LinkLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'LinkLabel1
@@ -138,10 +138,10 @@ Partial Class Form4
         Me.LinkLabel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel1.LinkColor = System.Drawing.Color.Red
-        Me.LinkLabel1.Location = New System.Drawing.Point(146, 44)
+        Me.LinkLabel1.Location = New System.Drawing.Point(96, 44)
         Me.LinkLabel1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(196, 102)
+        Me.LinkLabel1.Size = New System.Drawing.Size(179, 102)
         Me.LinkLabel1.TabIndex = 4
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "About Us"
@@ -153,9 +153,9 @@ Partial Class Form4
         Me.LinkLabel5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LinkLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel5.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel5.Location = New System.Drawing.Point(1019, 44)
+        Me.LinkLabel5.Location = New System.Drawing.Point(1003, 44)
         Me.LinkLabel5.Name = "LinkLabel5"
-        Me.LinkLabel5.Size = New System.Drawing.Size(105, 102)
+        Me.LinkLabel5.Size = New System.Drawing.Size(121, 102)
         Me.LinkLabel5.TabIndex = 5
         Me.LinkLabel5.TabStop = True
         Me.LinkLabel5.Text = "Library"
@@ -215,6 +215,7 @@ Partial Class Form4
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1924, 1061)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form4"

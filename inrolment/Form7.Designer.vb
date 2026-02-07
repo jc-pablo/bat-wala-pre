@@ -48,7 +48,7 @@ Partial Class Form7
         Me.TableLayoutPanel1.RowCount = 2
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.46405!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81.53595!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1395, 802)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1924, 1061)
         Me.TableLayoutPanel1.TabIndex = 0
         '
         'TableLayoutPanel2
@@ -57,14 +57,14 @@ Partial Class Form7
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.39612!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.123652!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.659957!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.051762!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.803738!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.75!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.03125!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.123652!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.731848!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.28037!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.444285!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.267433!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.973401!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.90625!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.895833!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.333333!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.1875!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.458333!))
         Me.TableLayoutPanel2.Controls.Add(Me.LinkLabel1, 1, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.LinkLabel2, 3, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.LinkLabel3, 5, 1)
@@ -78,7 +78,7 @@ Partial Class Form7
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.38636!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 39.20455!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28.40909!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1391, 144)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1920, 191)
         Me.TableLayoutPanel2.TabIndex = 0
         '
         'LinkLabel1
@@ -87,10 +87,10 @@ Partial Class Form7
         Me.LinkLabel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel1.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel1.Location = New System.Drawing.Point(550, 46)
+        Me.LinkLabel1.Location = New System.Drawing.Point(759, 61)
         Me.LinkLabel1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(109, 56)
+        Me.LinkLabel1.Size = New System.Drawing.Size(152, 74)
         Me.LinkLabel1.TabIndex = 0
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "About Us"
@@ -102,10 +102,10 @@ Partial Class Form7
         Me.LinkLabel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LinkLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel2.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel2.Location = New System.Drawing.Point(700, 46)
+        Me.LinkLabel2.Location = New System.Drawing.Point(966, 61)
         Me.LinkLabel2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(108, 56)
+        Me.LinkLabel2.Size = New System.Drawing.Size(164, 74)
         Me.LinkLabel2.TabIndex = 1
         Me.LinkLabel2.TabStop = True
         Me.LinkLabel2.Text = "Store"
@@ -117,10 +117,10 @@ Partial Class Form7
         Me.LinkLabel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LinkLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel3.LinkColor = System.Drawing.Color.Red
-        Me.LinkLabel3.Location = New System.Drawing.Point(851, 46)
+        Me.LinkLabel3.Location = New System.Drawing.Point(1173, 61)
         Me.LinkLabel3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LinkLabel3.Name = "LinkLabel3"
-        Me.LinkLabel3.Size = New System.Drawing.Size(109, 56)
+        Me.LinkLabel3.Size = New System.Drawing.Size(152, 74)
         Me.LinkLabel3.TabIndex = 2
         Me.LinkLabel3.TabStop = True
         Me.LinkLabel3.Text = "View Fees"
@@ -132,13 +132,13 @@ Partial Class Form7
         Me.LinkLabel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LinkLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel4.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel4.Location = New System.Drawing.Point(1002, 46)
+        Me.LinkLabel4.Location = New System.Drawing.Point(1404, 61)
         Me.LinkLabel4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LinkLabel4.Name = "LinkLabel4"
-        Me.LinkLabel4.Size = New System.Drawing.Size(139, 56)
+        Me.LinkLabel4.Size = New System.Drawing.Size(186, 74)
         Me.LinkLabel4.TabIndex = 3
         Me.LinkLabel4.TabStop = True
-        Me.LinkLabel4.Text = "Enroll Now"
+        Me.LinkLabel4.Text = "Enroll && Activities"
         Me.LinkLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'LinkLabel5
@@ -147,9 +147,9 @@ Partial Class Form7
         Me.LinkLabel5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LinkLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel5.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel5.Location = New System.Drawing.Point(1180, 46)
+        Me.LinkLabel5.Location = New System.Drawing.Point(1659, 61)
         Me.LinkLabel5.Name = "LinkLabel5"
-        Me.LinkLabel5.Size = New System.Drawing.Size(109, 56)
+        Me.LinkLabel5.Size = New System.Drawing.Size(132, 74)
         Me.LinkLabel5.TabIndex = 4
         Me.LinkLabel5.TabStop = True
         Me.LinkLabel5.Text = "Library"
@@ -161,7 +161,7 @@ Partial Class Form7
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1395, 802)
+        Me.ClientSize = New System.Drawing.Size(1924, 1061)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form7"

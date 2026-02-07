@@ -77,6 +77,8 @@ Partial Class Form8
         Me.SaveButton = New System.Windows.Forms.Button()
         Me.TableLayoutPanel13 = New System.Windows.Forms.TableLayoutPanel()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.TableLayoutPanel14 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
@@ -90,6 +92,7 @@ Partial Class Form8
         Me.TableLayoutPanel6.SuspendLayout()
         Me.TableLayoutPanel7.SuspendLayout()
         Me.TableLayoutPanel13.SuspendLayout()
+        Me.TableLayoutPanel14.SuspendLayout()
         Me.SuspendLayout()
         '
         'TableLayoutPanel1
@@ -103,6 +106,7 @@ Partial Class Form8
         Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel6, 0, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel7, 2, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel13, 0, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel14, 2, 0)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(2)
@@ -111,7 +115,7 @@ Partial Class Form8
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 41.11111!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 52.71318!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.29845!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1443, 857)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1924, 1061)
         Me.TableLayoutPanel1.TabIndex = 0
         '
         'TableLayoutPanel2
@@ -122,13 +126,13 @@ Partial Class Form8
         Me.TableLayoutPanel2.Controls.Add(Me.TableLayoutPanel3, 0, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.TableLayoutPanel4, 0, 0)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(251, 353)
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(334, 437)
         Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(2)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 2
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 63.68715!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 36.31285!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(920, 447)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1229, 554)
         Me.TableLayoutPanel2.TabIndex = 0
         '
         'TableLayoutPanel3
@@ -139,13 +143,13 @@ Partial Class Form8
         Me.TableLayoutPanel3.Controls.Add(Me.TableLayoutPanel5, 0, 0)
         Me.TableLayoutPanel3.Controls.Add(Me.TableLayoutPanel12, 0, 1)
         Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel3.Location = New System.Drawing.Point(2, 286)
+        Me.TableLayoutPanel3.Location = New System.Drawing.Point(2, 354)
         Me.TableLayoutPanel3.Margin = New System.Windows.Forms.Padding(2)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 2
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53.47594!))
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.52406!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(916, 159)
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(1225, 198)
         Me.TableLayoutPanel3.TabIndex = 0
         '
         'TableLayoutPanel5
@@ -163,7 +167,7 @@ Partial Class Form8
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 81.0!))
-        Me.TableLayoutPanel5.Size = New System.Drawing.Size(912, 81)
+        Me.TableLayoutPanel5.Size = New System.Drawing.Size(1221, 101)
         Me.TableLayoutPanel5.TabIndex = 2
         '
         'TableLayoutPanel10
@@ -182,7 +186,7 @@ Partial Class Form8
         Me.TableLayoutPanel10.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel10.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel10.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
-        Me.TableLayoutPanel10.Size = New System.Drawing.Size(442, 77)
+        Me.TableLayoutPanel10.Size = New System.Drawing.Size(593, 97)
         Me.TableLayoutPanel10.TabIndex = 2
         '
         'Label3
@@ -190,10 +194,10 @@ Partial Class Form8
         Me.Label3.AutoSize = True
         Me.Label3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(296, 0)
+        Me.Label3.Location = New System.Drawing.Point(397, 0)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(144, 25)
+        Me.Label3.Size = New System.Drawing.Size(194, 32)
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Total Fee:"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.TopRight
@@ -203,10 +207,10 @@ Partial Class Form8
         Me.Label4.AutoSize = True
         Me.Label4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(296, 25)
+        Me.Label4.Location = New System.Drawing.Point(397, 32)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(144, 25)
+        Me.Label4.Size = New System.Drawing.Size(194, 32)
         Me.Label4.TabIndex = 1
         Me.Label4.Text = "Discount:"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.TopRight
@@ -217,10 +221,10 @@ Partial Class Form8
         Me.Label5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.Red
-        Me.Label5.Location = New System.Drawing.Point(296, 50)
+        Me.Label5.Location = New System.Drawing.Point(397, 64)
         Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(144, 27)
+        Me.Label5.Size = New System.Drawing.Size(194, 33)
         Me.Label5.TabIndex = 2
         Me.Label5.Text = "Total to Pay:"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.TopRight
@@ -233,13 +237,13 @@ Partial Class Form8
         Me.TableLayoutPanel8.Controls.Add(Me.TableLayoutPanel9, 1, 0)
         Me.TableLayoutPanel8.Controls.Add(Me.TableLayoutPanel11, 0, 0)
         Me.TableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel8.Location = New System.Drawing.Point(448, 2)
+        Me.TableLayoutPanel8.Location = New System.Drawing.Point(599, 2)
         Me.TableLayoutPanel8.Margin = New System.Windows.Forms.Padding(2)
         Me.TableLayoutPanel8.Name = "TableLayoutPanel8"
         Me.TableLayoutPanel8.RowCount = 1
         Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel8.Size = New System.Drawing.Size(462, 77)
+        Me.TableLayoutPanel8.Size = New System.Drawing.Size(620, 97)
         Me.TableLayoutPanel8.TabIndex = 1
         '
         'TableLayoutPanel9
@@ -250,13 +254,13 @@ Partial Class Form8
         Me.TableLayoutPanel9.Controls.Add(Me.btnCompute, 0, 0)
         Me.TableLayoutPanel9.Controls.Add(Me.CheckBox9, 1, 0)
         Me.TableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel9.Location = New System.Drawing.Point(237, 2)
+        Me.TableLayoutPanel9.Location = New System.Drawing.Point(317, 2)
         Me.TableLayoutPanel9.Margin = New System.Windows.Forms.Padding(2)
         Me.TableLayoutPanel9.Name = "TableLayoutPanel9"
         Me.TableLayoutPanel9.RowCount = 2
         Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70.58823!))
         Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29.41176!))
-        Me.TableLayoutPanel9.Size = New System.Drawing.Size(223, 73)
+        Me.TableLayoutPanel9.Size = New System.Drawing.Size(301, 93)
         Me.TableLayoutPanel9.TabIndex = 2
         '
         'btnCompute
@@ -275,7 +279,7 @@ Partial Class Form8
         '
         Me.CheckBox9.AutoSize = True
         Me.CheckBox9.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox9.Location = New System.Drawing.Point(113, 2)
+        Me.CheckBox9.Location = New System.Drawing.Point(152, 2)
         Me.CheckBox9.Margin = New System.Windows.Forms.Padding(2)
         Me.CheckBox9.Name = "CheckBox9"
         Me.CheckBox9.Size = New System.Drawing.Size(90, 38)
@@ -298,7 +302,7 @@ Partial Class Form8
         Me.TableLayoutPanel11.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel11.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel11.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
-        Me.TableLayoutPanel11.Size = New System.Drawing.Size(231, 73)
+        Me.TableLayoutPanel11.Size = New System.Drawing.Size(311, 93)
         Me.TableLayoutPanel11.TabIndex = 3
         '
         'lblPay1
@@ -316,7 +320,7 @@ Partial Class Form8
         '
         Me.lblPay2.AutoSize = True
         Me.lblPay2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPay2.Location = New System.Drawing.Point(2, 24)
+        Me.lblPay2.Location = New System.Drawing.Point(2, 31)
         Me.lblPay2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblPay2.Name = "lblPay2"
         Me.lblPay2.Size = New System.Drawing.Size(40, 20)
@@ -327,7 +331,7 @@ Partial Class Form8
         '
         Me.lblPay3.AutoSize = True
         Me.lblPay3.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPay3.Location = New System.Drawing.Point(2, 48)
+        Me.lblPay3.Location = New System.Drawing.Point(2, 62)
         Me.lblPay3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblPay3.Name = "lblPay3"
         Me.lblPay3.Size = New System.Drawing.Size(49, 24)
@@ -347,13 +351,13 @@ Partial Class Form8
         Me.TableLayoutPanel12.Controls.Add(Me.btnPay, 2, 1)
         Me.TableLayoutPanel12.Controls.Add(Me.lblChange, 1, 1)
         Me.TableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel12.Location = New System.Drawing.Point(2, 87)
+        Me.TableLayoutPanel12.Location = New System.Drawing.Point(2, 107)
         Me.TableLayoutPanel12.Margin = New System.Windows.Forms.Padding(2)
         Me.TableLayoutPanel12.Name = "TableLayoutPanel12"
         Me.TableLayoutPanel12.RowCount = 2
         Me.TableLayoutPanel12.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel12.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel12.Size = New System.Drawing.Size(912, 70)
+        Me.TableLayoutPanel12.Size = New System.Drawing.Size(1221, 89)
         Me.TableLayoutPanel12.TabIndex = 3
         '
         'Label10
@@ -364,7 +368,7 @@ Partial Class Form8
         Me.Label10.Location = New System.Drawing.Point(2, 0)
         Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(167, 35)
+        Me.Label10.Size = New System.Drawing.Size(225, 44)
         Me.Label10.TabIndex = 0
         Me.Label10.Text = "Amount Tendered:"
         Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -374,10 +378,10 @@ Partial Class Form8
         Me.Label18.AutoSize = True
         Me.Label18.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(2, 35)
+        Me.Label18.Location = New System.Drawing.Point(2, 44)
         Me.Label18.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(167, 35)
+        Me.Label18.Size = New System.Drawing.Size(225, 45)
         Me.Label18.TabIndex = 1
         Me.Label18.Text = "Change:"
         Me.Label18.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -386,7 +390,7 @@ Partial Class Form8
         '
         Me.txtAmount.BackColor = System.Drawing.SystemColors.InactiveBorder
         Me.txtAmount.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAmount.Location = New System.Drawing.Point(173, 2)
+        Me.txtAmount.Location = New System.Drawing.Point(231, 2)
         Me.txtAmount.Margin = New System.Windows.Forms.Padding(2)
         Me.txtAmount.Name = "txtAmount"
         Me.txtAmount.Size = New System.Drawing.Size(116, 26)
@@ -397,10 +401,10 @@ Partial Class Form8
         Me.btnPay.BackColor = System.Drawing.Color.LightGray
         Me.btnPay.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btnPay.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPay.Location = New System.Drawing.Point(304, 37)
+        Me.btnPay.Location = New System.Drawing.Point(407, 46)
         Me.btnPay.Margin = New System.Windows.Forms.Padding(2)
         Me.btnPay.Name = "btnPay"
-        Me.btnPay.Size = New System.Drawing.Size(86, 31)
+        Me.btnPay.Size = New System.Drawing.Size(117, 41)
         Me.btnPay.TabIndex = 3
         Me.btnPay.Text = "Pay Now"
         Me.btnPay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -411,10 +415,10 @@ Partial Class Form8
         Me.lblChange.AutoSize = True
         Me.lblChange.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lblChange.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblChange.Location = New System.Drawing.Point(173, 35)
+        Me.lblChange.Location = New System.Drawing.Point(231, 44)
         Me.lblChange.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblChange.Name = "lblChange"
-        Me.lblChange.Size = New System.Drawing.Size(127, 35)
+        Me.lblChange.Size = New System.Drawing.Size(172, 45)
         Me.lblChange.TabIndex = 4
         Me.lblChange.Text = "₱ 0.00"
         Me.lblChange.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -469,7 +473,7 @@ Partial Class Form8
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.912538!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.45481!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.332361!))
-        Me.TableLayoutPanel4.Size = New System.Drawing.Size(916, 280)
+        Me.TableLayoutPanel4.Size = New System.Drawing.Size(1225, 348)
         Me.TableLayoutPanel4.TabIndex = 1
         '
         'Label6
@@ -477,10 +481,10 @@ Partial Class Form8
         Me.Label6.AutoSize = True
         Me.Label6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(360, 0)
+        Me.Label6.Location = New System.Drawing.Point(480, 0)
         Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(229, 35)
+        Me.Label6.Size = New System.Drawing.Size(308, 43)
         Me.Label6.TabIndex = 10
         Me.Label6.Text = "Tuition Fee"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -489,7 +493,7 @@ Partial Class Form8
         '
         Me.CheckBox10.AutoSize = True
         Me.CheckBox10.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox10.Location = New System.Drawing.Point(360, 37)
+        Me.CheckBox10.Location = New System.Drawing.Point(480, 45)
         Me.CheckBox10.Margin = New System.Windows.Forms.Padding(2)
         Me.CheckBox10.Name = "CheckBox10"
         Me.CheckBox10.Size = New System.Drawing.Size(125, 21)
@@ -502,7 +506,7 @@ Partial Class Form8
         Me.CheckBox11.AutoSize = True
         Me.CheckBox11.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckBox11.ForeColor = System.Drawing.Color.Black
-        Me.CheckBox11.Location = New System.Drawing.Point(360, 63)
+        Me.CheckBox11.Location = New System.Drawing.Point(480, 77)
         Me.CheckBox11.Margin = New System.Windows.Forms.Padding(2)
         Me.CheckBox11.Name = "CheckBox11"
         Me.CheckBox11.Size = New System.Drawing.Size(136, 21)
@@ -514,7 +518,7 @@ Partial Class Form8
         '
         Me.txtName.BackColor = System.Drawing.SystemColors.InactiveBorder
         Me.txtName.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtName.Location = New System.Drawing.Point(44, 37)
+        Me.txtName.Location = New System.Drawing.Point(58, 45)
         Me.txtName.Margin = New System.Windows.Forms.Padding(2)
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(209, 23)
@@ -524,7 +528,7 @@ Partial Class Form8
         '
         Me.CheckBox12.AutoSize = True
         Me.CheckBox12.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox12.Location = New System.Drawing.Point(360, 88)
+        Me.CheckBox12.Location = New System.Drawing.Point(480, 108)
         Me.CheckBox12.Margin = New System.Windows.Forms.Padding(2)
         Me.CheckBox12.Name = "CheckBox12"
         Me.CheckBox12.Size = New System.Drawing.Size(136, 21)
@@ -537,10 +541,10 @@ Partial Class Form8
         Me.Label16.AutoSize = True
         Me.Label16.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(44, 15)
+        Me.Label16.Location = New System.Drawing.Point(58, 23)
         Me.Label16.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(312, 20)
+        Me.Label16.Size = New System.Drawing.Size(418, 20)
         Me.Label16.TabIndex = 4
         Me.Label16.Text = "Student Name :"
         Me.Label16.TextAlign = System.Drawing.ContentAlignment.BottomLeft
@@ -549,7 +553,7 @@ Partial Class Form8
         '
         Me.CheckBox13.AutoSize = True
         Me.CheckBox13.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox13.Location = New System.Drawing.Point(360, 113)
+        Me.CheckBox13.Location = New System.Drawing.Point(480, 139)
         Me.CheckBox13.Margin = New System.Windows.Forms.Padding(2)
         Me.CheckBox13.Name = "CheckBox13"
         Me.CheckBox13.Size = New System.Drawing.Size(136, 21)
@@ -561,7 +565,7 @@ Partial Class Form8
         '
         Me.CheckBox14.AutoSize = True
         Me.CheckBox14.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox14.Location = New System.Drawing.Point(360, 145)
+        Me.CheckBox14.Location = New System.Drawing.Point(480, 179)
         Me.CheckBox14.Margin = New System.Windows.Forms.Padding(2)
         Me.CheckBox14.Name = "CheckBox14"
         Me.CheckBox14.Size = New System.Drawing.Size(136, 21)
@@ -573,10 +577,10 @@ Partial Class Form8
         '
         Me.CheckBox15.AutoSize = True
         Me.CheckBox15.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox15.Location = New System.Drawing.Point(360, 172)
+        Me.CheckBox15.Location = New System.Drawing.Point(480, 213)
         Me.CheckBox15.Margin = New System.Windows.Forms.Padding(2)
         Me.CheckBox15.Name = "CheckBox15"
-        Me.CheckBox15.Size = New System.Drawing.Size(136, 20)
+        Me.CheckBox15.Size = New System.Drawing.Size(136, 21)
         Me.CheckBox15.TabIndex = 16
         Me.CheckBox15.Text = "Grade 5 ₱36,000"
         Me.CheckBox15.UseVisualStyleBackColor = True
@@ -585,7 +589,7 @@ Partial Class Form8
         '
         Me.CheckBox16.AutoSize = True
         Me.CheckBox16.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox16.Location = New System.Drawing.Point(360, 196)
+        Me.CheckBox16.Location = New System.Drawing.Point(480, 243)
         Me.CheckBox16.Margin = New System.Windows.Forms.Padding(2)
         Me.CheckBox16.Name = "CheckBox16"
         Me.CheckBox16.Size = New System.Drawing.Size(136, 21)
@@ -598,10 +602,10 @@ Partial Class Form8
         Me.Label7.AutoSize = True
         Me.Label7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(593, 0)
+        Me.Label7.Location = New System.Drawing.Point(792, 0)
         Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(286, 35)
+        Me.Label7.Size = New System.Drawing.Size(384, 43)
         Me.Label7.TabIndex = 18
         Me.Label7.Text = "Miscellaneous Fee"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -610,7 +614,7 @@ Partial Class Form8
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(593, 35)
+        Me.Label8.Location = New System.Drawing.Point(792, 43)
         Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(161, 17)
@@ -621,7 +625,7 @@ Partial Class Form8
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(593, 61)
+        Me.Label9.Location = New System.Drawing.Point(792, 75)
         Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(117, 17)
@@ -632,7 +636,7 @@ Partial Class Form8
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(593, 86)
+        Me.Label11.Location = New System.Drawing.Point(792, 106)
         Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(174, 17)
@@ -643,7 +647,7 @@ Partial Class Form8
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(593, 111)
+        Me.Label12.Location = New System.Drawing.Point(792, 137)
         Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(105, 17)
@@ -654,7 +658,7 @@ Partial Class Form8
         '
         Me.CheckBox17.AutoSize = True
         Me.CheckBox17.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox17.Location = New System.Drawing.Point(593, 221)
+        Me.CheckBox17.Location = New System.Drawing.Point(792, 274)
         Me.CheckBox17.Margin = New System.Windows.Forms.Padding(2)
         Me.CheckBox17.Name = "CheckBox17"
         Me.CheckBox17.Size = New System.Drawing.Size(114, 22)
@@ -667,7 +671,7 @@ Partial Class Form8
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(593, 143)
+        Me.Label13.Location = New System.Drawing.Point(792, 177)
         Me.Label13.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(193, 17)
@@ -678,7 +682,7 @@ Partial Class Form8
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(593, 170)
+        Me.Label14.Location = New System.Drawing.Point(792, 211)
         Me.Label14.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(189, 17)
@@ -689,7 +693,7 @@ Partial Class Form8
         '
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(593, 194)
+        Me.Label15.Location = New System.Drawing.Point(792, 241)
         Me.Label15.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(232, 17)
@@ -701,10 +705,10 @@ Partial Class Form8
         Me.Label1.AutoSize = True
         Me.Label1.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(44, 66)
+        Me.Label1.Location = New System.Drawing.Point(58, 86)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(312, 20)
+        Me.Label1.Size = New System.Drawing.Size(418, 20)
         Me.Label1.TabIndex = 27
         Me.Label1.Text = "LRN:"
         '
@@ -712,7 +716,7 @@ Partial Class Form8
         '
         Me.TextBox1.BackColor = System.Drawing.SystemColors.InactiveBorder
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(44, 88)
+        Me.TextBox1.Location = New System.Drawing.Point(58, 108)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(154, 26)
@@ -723,10 +727,10 @@ Partial Class Form8
         Me.Label2.AutoSize = True
         Me.Label2.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(44, 123)
+        Me.Label2.Location = New System.Drawing.Point(58, 157)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(312, 20)
+        Me.Label2.Size = New System.Drawing.Size(418, 20)
         Me.Label2.TabIndex = 29
         Me.Label2.Text = "Guardian Name:"
         '
@@ -735,10 +739,10 @@ Partial Class Form8
         Me.Label17.AutoSize = True
         Me.Label17.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(44, 174)
+        Me.Label17.Location = New System.Drawing.Point(58, 221)
         Me.Label17.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(312, 20)
+        Me.Label17.Size = New System.Drawing.Size(418, 20)
         Me.Label17.TabIndex = 30
         Me.Label17.Text = "Contact Number:"
         '
@@ -746,7 +750,7 @@ Partial Class Form8
         '
         Me.TextBox2.BackColor = System.Drawing.SystemColors.InactiveBorder
         Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(44, 145)
+        Me.TextBox2.Location = New System.Drawing.Point(58, 179)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(207, 26)
@@ -756,7 +760,7 @@ Partial Class Form8
         '
         Me.TextBox3.BackColor = System.Drawing.SystemColors.InactiveBorder
         Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(44, 196)
+        Me.TextBox3.Location = New System.Drawing.Point(58, 243)
         Me.TextBox3.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(151, 26)
@@ -770,14 +774,14 @@ Partial Class Form8
         Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.65591!))
         Me.TableLayoutPanel6.Controls.Add(Me.Clear, 1, 1)
         Me.TableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel6.Location = New System.Drawing.Point(2, 804)
+        Me.TableLayoutPanel6.Location = New System.Drawing.Point(2, 995)
         Me.TableLayoutPanel6.Margin = New System.Windows.Forms.Padding(2)
         Me.TableLayoutPanel6.Name = "TableLayoutPanel6"
         Me.TableLayoutPanel6.RowCount = 3
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70.0!))
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.33333!))
-        Me.TableLayoutPanel6.Size = New System.Drawing.Size(245, 51)
+        Me.TableLayoutPanel6.Size = New System.Drawing.Size(328, 64)
         Me.TableLayoutPanel6.TabIndex = 1
         '
         'Clear
@@ -786,10 +790,10 @@ Partial Class Form8
         Me.Clear.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Clear.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Clear.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.Clear.Location = New System.Drawing.Point(22, 10)
+        Me.Clear.Location = New System.Drawing.Point(29, 12)
         Me.Clear.Margin = New System.Windows.Forms.Padding(2)
         Me.Clear.Name = "Clear"
-        Me.Clear.Size = New System.Drawing.Size(162, 31)
+        Me.Clear.Size = New System.Drawing.Size(218, 40)
         Me.Clear.TabIndex = 0
         Me.Clear.Text = "Clear"
         Me.Clear.UseVisualStyleBackColor = False
@@ -802,14 +806,14 @@ Partial Class Form8
         Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.498584!))
         Me.TableLayoutPanel7.Controls.Add(Me.SaveButton, 1, 1)
         Me.TableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel7.Location = New System.Drawing.Point(1175, 804)
+        Me.TableLayoutPanel7.Location = New System.Drawing.Point(1567, 995)
         Me.TableLayoutPanel7.Margin = New System.Windows.Forms.Padding(2)
         Me.TableLayoutPanel7.Name = "TableLayoutPanel7"
         Me.TableLayoutPanel7.RowCount = 3
         Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.33333!))
         Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70.0!))
         Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
-        Me.TableLayoutPanel7.Size = New System.Drawing.Size(266, 51)
+        Me.TableLayoutPanel7.Size = New System.Drawing.Size(355, 64)
         Me.TableLayoutPanel7.TabIndex = 2
         '
         'SaveButton
@@ -817,10 +821,10 @@ Partial Class Form8
         Me.SaveButton.BackColor = System.Drawing.Color.Gainsboro
         Me.SaveButton.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SaveButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SaveButton.Location = New System.Drawing.Point(56, 8)
+        Me.SaveButton.Location = New System.Drawing.Point(75, 10)
         Me.SaveButton.Margin = New System.Windows.Forms.Padding(2)
         Me.SaveButton.Name = "SaveButton"
-        Me.SaveButton.Size = New System.Drawing.Size(184, 31)
+        Me.SaveButton.Size = New System.Drawing.Size(247, 40)
         Me.SaveButton.TabIndex = 0
         Me.SaveButton.Text = "Save File"
         Me.SaveButton.UseVisualStyleBackColor = False
@@ -837,7 +841,7 @@ Partial Class Form8
         Me.TableLayoutPanel13.RowCount = 2
         Me.TableLayoutPanel13.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.88406!))
         Me.TableLayoutPanel13.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88.11594!))
-        Me.TableLayoutPanel13.Size = New System.Drawing.Size(243, 345)
+        Me.TableLayoutPanel13.Size = New System.Drawing.Size(326, 429)
         Me.TableLayoutPanel13.TabIndex = 3
         '
         'Button1
@@ -847,10 +851,39 @@ Partial Class Form8
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(3, 3)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(115, 35)
+        Me.Button1.Size = New System.Drawing.Size(157, 44)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Back"
         Me.Button1.UseVisualStyleBackColor = False
+        '
+        'TableLayoutPanel14
+        '
+        Me.TableLayoutPanel14.ColumnCount = 1
+        Me.TableLayoutPanel14.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel14.Controls.Add(Me.Button2, 0, 1)
+        Me.TableLayoutPanel14.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel14.Location = New System.Drawing.Point(1568, 3)
+        Me.TableLayoutPanel14.Name = "TableLayoutPanel14"
+        Me.TableLayoutPanel14.RowCount = 3
+        Me.TableLayoutPanel14.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.324009!))
+        Me.TableLayoutPanel14.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.57343!))
+        Me.TableLayoutPanel14.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 64.33566!))
+        Me.TableLayoutPanel14.Size = New System.Drawing.Size(353, 429)
+        Me.TableLayoutPanel14.TabIndex = 4
+        '
+        'Button2
+        '
+        Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
+        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button2.Font = New System.Drawing.Font("Nirmala Text", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.Yellow
+        Me.Button2.Location = New System.Drawing.Point(3, 42)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(347, 107)
+        Me.Button2.TabIndex = 0
+        Me.Button2.Text = "Enroll Physical Activities Here"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'Form8
         '
@@ -858,8 +891,9 @@ Partial Class Form8
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1443, 857)
+        Me.ClientSize = New System.Drawing.Size(1924, 1061)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.DoubleBuffered = True
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form8"
         Me.Text = "Form8"
@@ -882,6 +916,7 @@ Partial Class Form8
         Me.TableLayoutPanel6.ResumeLayout(False)
         Me.TableLayoutPanel7.ResumeLayout(False)
         Me.TableLayoutPanel13.ResumeLayout(False)
+        Me.TableLayoutPanel14.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -940,4 +975,6 @@ Partial Class Form8
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents TableLayoutPanel13 As TableLayoutPanel
     Friend WithEvents Button1 As Button
+    Friend WithEvents TableLayoutPanel14 As TableLayoutPanel
+    Friend WithEvents Button2 As Button
 End Class
