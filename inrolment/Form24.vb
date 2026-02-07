@@ -1,5 +1,5 @@
-﻿Public Class Form23
-    Private Sub PictureBox6_Click(sender As Object, e As EventArgs)
+﻿Public Class Form24
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
 
     End Sub
 
