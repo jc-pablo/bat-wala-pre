@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form12
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form12
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form12))
         Me.Panel3 = New System.Windows.Forms.Panel()
@@ -215,9 +215,9 @@ Partial Class Form12
         Me.Panel4.Controls.Add(Me.CheckBox15)
         Me.Panel4.Controls.Add(Me.CheckBox14)
         Me.Panel4.Controls.Add(Me.CheckBox16)
-        Me.Panel4.Location = New System.Drawing.Point(1330, 220)
+        Me.Panel4.Location = New System.Drawing.Point(1319, 221)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(484, 521)
+        Me.Panel4.Size = New System.Drawing.Size(522, 521)
         Me.Panel4.TabIndex = 36
         '
         'btnClear
@@ -283,7 +283,7 @@ Partial Class Form12
         Me.CheckBox10.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckBox10.ForeColor = System.Drawing.Color.White
-        Me.CheckBox10.Location = New System.Drawing.Point(192, 338)
+        Me.CheckBox10.Location = New System.Drawing.Point(162, 337)
         Me.CheckBox10.Name = "CheckBox10"
         Me.CheckBox10.Size = New System.Drawing.Size(189, 24)
         Me.CheckBox10.TabIndex = 8
@@ -296,7 +296,7 @@ Partial Class Form12
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Nirmala Text", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Gold
-        Me.Label3.Location = New System.Drawing.Point(176, 1)
+        Me.Label3.Location = New System.Drawing.Point(146, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(211, 45)
         Me.Label3.TabIndex = 11
@@ -308,7 +308,7 @@ Partial Class Form12
         Me.CheckBox11.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckBox11.ForeColor = System.Drawing.Color.White
-        Me.CheckBox11.Location = New System.Drawing.Point(192, 292)
+        Me.CheckBox11.Location = New System.Drawing.Point(162, 291)
         Me.CheckBox11.Name = "CheckBox11"
         Me.CheckBox11.Size = New System.Drawing.Size(176, 24)
         Me.CheckBox11.TabIndex = 7
@@ -321,7 +321,7 @@ Partial Class Form12
         Me.CheckBox12.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckBox12.ForeColor = System.Drawing.Color.White
-        Me.CheckBox12.Location = New System.Drawing.Point(192, 245)
+        Me.CheckBox12.Location = New System.Drawing.Point(162, 244)
         Me.CheckBox12.Name = "CheckBox12"
         Me.CheckBox12.Size = New System.Drawing.Size(195, 24)
         Me.CheckBox12.TabIndex = 6
@@ -334,7 +334,7 @@ Partial Class Form12
         Me.CheckBox13.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckBox13.ForeColor = System.Drawing.Color.White
-        Me.CheckBox13.Location = New System.Drawing.Point(192, 199)
+        Me.CheckBox13.Location = New System.Drawing.Point(162, 198)
         Me.CheckBox13.Name = "CheckBox13"
         Me.CheckBox13.Size = New System.Drawing.Size(161, 24)
         Me.CheckBox13.TabIndex = 3
@@ -347,7 +347,7 @@ Partial Class Form12
         Me.CheckBox15.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckBox15.ForeColor = System.Drawing.Color.White
-        Me.CheckBox15.Location = New System.Drawing.Point(192, 152)
+        Me.CheckBox15.Location = New System.Drawing.Point(162, 151)
         Me.CheckBox15.Name = "CheckBox15"
         Me.CheckBox15.Size = New System.Drawing.Size(245, 24)
         Me.CheckBox15.TabIndex = 1
@@ -360,7 +360,7 @@ Partial Class Form12
         Me.CheckBox14.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox14.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckBox14.ForeColor = System.Drawing.Color.White
-        Me.CheckBox14.Location = New System.Drawing.Point(192, 107)
+        Me.CheckBox14.Location = New System.Drawing.Point(162, 106)
         Me.CheckBox14.Name = "CheckBox14"
         Me.CheckBox14.Size = New System.Drawing.Size(211, 24)
         Me.CheckBox14.TabIndex = 2
@@ -373,7 +373,7 @@ Partial Class Form12
         Me.CheckBox16.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckBox16.ForeColor = System.Drawing.Color.White
-        Me.CheckBox16.Location = New System.Drawing.Point(192, 64)
+        Me.CheckBox16.Location = New System.Drawing.Point(162, 63)
         Me.CheckBox16.Name = "CheckBox16"
         Me.CheckBox16.Size = New System.Drawing.Size(127, 24)
         Me.CheckBox16.TabIndex = 0
@@ -616,6 +616,7 @@ Partial Class Form12
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel4)
+        Me.DoubleBuffered = True
         Me.Name = "Form12"
         Me.Text = "Form12"
         Me.Panel3.ResumeLayout(False)

@@ -158,6 +158,7 @@ Partial Class Form22
         Me.DoubleBuffered = True
         Me.Name = "Form22"
         Me.Text = "Form22"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
