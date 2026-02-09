@@ -82,37 +82,37 @@
             Dim baseAmount As Integer
             baseAmount = InputBox("Enter base registration fee:", "Professional", 1000)
             ListBox1.Items.Add("Activity: Track & Field")
-            ListBox1.Items.Add("Total: " & ProFee(baseAmount))
+            Bayad(1, ProFee(baseAmount))
 
         ElseIf RadioButton17.Checked = True Then
             Dim baseAmount As Integer
             baseAmount = InputBox("Enter base registration fee:", "Professional", 1000)
             ListBox1.Items.Add("Activity: Gymnastics")
-            ListBox1.Items.Add("Total: " & ProFee(baseAmount))
+            Bayad(1, ProFee(baseAmount))
 
         ElseIf RadioButton16.Checked = True Then
             Dim baseAmount As Integer
             baseAmount = InputBox("Enter base registration fee:", "Professional", 1000)
             ListBox1.Items.Add("Activity: Varsity Basketball")
-            ListBox1.Items.Add("Total: " & ProFee(baseAmount))
+            Bayad(1, ProFee(baseAmount))
 
         ElseIf RadioButton15.Checked = True Then
             Dim baseAmount As Integer
             baseAmount = InputBox("Enter base registration fee:", "Professional", 1000)
             ListBox1.Items.Add("Activity: Tournament Golf")
-            ListBox1.Items.Add("Total: " & ProFee(baseAmount))
+            Bayad(1, ProFee(baseAmount))
 
         ElseIf RadioButton14.Checked = True Then
             Dim baseAmount As Integer
             baseAmount = InputBox("Enter base registration fee:", "Professional", 1000)
             ListBox1.Items.Add("Activity: Professional Tennis")
-            ListBox1.Items.Add("Total: " & ProFee(baseAmount))
+            Bayad(1, ProFee(baseAmount))
 
         ElseIf RadioButton13.Checked = True Then
             Dim baseAmount As Integer
             baseAmount = InputBox("Enter base registration fee:", "Professional", 1000)
             ListBox1.Items.Add("Activity: Scout Camping")
-            ListBox1.Items.Add("Total: " & ProFee(baseAmount))
+            Bayad(1, ProFee(baseAmount))
 
 
         Else
@@ -120,18 +120,19 @@
         End If
     End Sub
     Private Function ProFee(ByRef total As Integer) As Integer
-        total = total * 2
+        total = total * 5
         Return total
     End Function
 
     Private Function FinalTotal() As Integer
         Dim allTotal As Integer = 0
-        Dim itemText As String
+
         For i As Integer = 0 To ListBox1.Items.Count - 1
-            itemText = ListBox1.Items(i).ToString()
-            If itemText.Contains("Total:") Then
-                Dim priceOnly As String = itemText.Replace("Total: ", "").Trim()
-                allTotal += Val(priceOnly)
+            Dim itemText As String = ListBox1.Items(i).ToString()
+
+            If itemText.Contains("Total Fee:") Then
+                Dim priceString As String = itemText.Replace("Total Fee: ", "").Trim()
+                allTotal += Val(priceString)
             End If
         Next
 
@@ -181,5 +182,9 @@
     Private Sub LinkLabel5_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel5.LinkClicked
         Form14.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub Form26_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class
