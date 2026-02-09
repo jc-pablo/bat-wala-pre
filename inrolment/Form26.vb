@@ -116,7 +116,7 @@
 
 
         Else
-                MsgBox("Please select an activity first!")
+            MsgBox("Please choose an activity first!")
         End If
     End Sub
     Private Function ProFee(ByRef total As Integer) As Integer
