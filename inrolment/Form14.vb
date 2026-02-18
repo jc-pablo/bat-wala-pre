@@ -286,5 +286,9 @@
         Form15.Show()
         Me.Hide()
     End Sub
+
+    Private Sub dtLib_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dtLib.CellContentClick
+
+    End Sub
 End Class
 

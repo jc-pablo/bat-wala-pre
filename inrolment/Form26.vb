@@ -120,7 +120,7 @@
         End If
     End Sub
     Private Function ProFee(ByRef total As Integer) As Integer
-        total = total * 5
+        total = total * 2
         Return total
     End Function
 

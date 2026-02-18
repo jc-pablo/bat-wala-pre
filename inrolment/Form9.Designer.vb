@@ -96,13 +96,13 @@ Partial Class Form9
         Me.LinkLabel4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.LinkLabel4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.LinkLabel4.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel4.Location = New System.Drawing.Point(1059, 66)
+        Me.LinkLabel4.Location = New System.Drawing.Point(1073, 67)
         Me.LinkLabel4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LinkLabel4.Name = "LinkLabel4"
-        Me.LinkLabel4.Size = New System.Drawing.Size(118, 26)
+        Me.LinkLabel4.Size = New System.Drawing.Size(182, 26)
         Me.LinkLabel4.TabIndex = 3
         Me.LinkLabel4.TabStop = True
-        Me.LinkLabel4.Text = "Enroll Now"
+        Me.LinkLabel4.Text = "Enroll && Activities"
         '
         'Label1
         '
@@ -141,7 +141,7 @@ Partial Class Form9
         Me.LinkLabel5.BackColor = System.Drawing.Color.Transparent
         Me.LinkLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel5.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel5.Location = New System.Drawing.Point(1260, 66)
+        Me.LinkLabel5.Location = New System.Drawing.Point(1333, 67)
         Me.LinkLabel5.Name = "LinkLabel5"
         Me.LinkLabel5.Size = New System.Drawing.Size(78, 25)
         Me.LinkLabel5.TabIndex = 6

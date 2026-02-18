@@ -151,4 +151,8 @@ Public Class Form27
         Form14.Show()
         Me.Hide()
     End Sub
+
+    Private Sub Form27_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
