@@ -5,7 +5,7 @@
     End Sub
 
     Private Sub LinkLabel3_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel3.LinkClicked
-        Form8.Show()
+        Form2.Show()
         Me.Hide()
     End Sub
 

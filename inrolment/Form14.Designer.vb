@@ -23,7 +23,7 @@ Partial Class Form14
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form14))
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.CheckedListBox1 = New System.Windows.Forms.CheckedListBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -50,7 +50,7 @@ Partial Class Form14
         Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel4 = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel5 = New System.Windows.Forms.LinkLabel()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label8 = New System.Windows.Forms.Label()
         CType(Me.dtLib, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -164,14 +164,14 @@ Partial Class Form14
         '
         Me.dtLib.BackgroundColor = System.Drawing.Color.WhiteSmoke
         Me.dtLib.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Menu
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dtLib.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Menu
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dtLib.DefaultCellStyle = DataGridViewCellStyle1
         Me.dtLib.Location = New System.Drawing.Point(410, 345)
         Me.dtLib.Name = "dtLib"
         Me.dtLib.Size = New System.Drawing.Size(1034, 492)
@@ -368,12 +368,12 @@ Partial Class Form14
         Me.LinkLabel4.BackColor = System.Drawing.Color.Transparent
         Me.LinkLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel4.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel4.Location = New System.Drawing.Point(1450, 77)
+        Me.LinkLabel4.Location = New System.Drawing.Point(1418, 77)
         Me.LinkLabel4.Name = "LinkLabel4"
-        Me.LinkLabel4.Size = New System.Drawing.Size(115, 25)
+        Me.LinkLabel4.Size = New System.Drawing.Size(179, 25)
         Me.LinkLabel4.TabIndex = 26
         Me.LinkLabel4.TabStop = True
-        Me.LinkLabel4.Text = "Enroll Now"
+        Me.LinkLabel4.Text = "Enroll && Activities"
         '
         'LinkLabel5
         '
@@ -388,14 +388,17 @@ Partial Class Form14
         Me.LinkLabel5.TabStop = True
         Me.LinkLabel5.Text = "Library"
         '
-        'Button1
+        'Label8
         '
-        Me.Button1.Location = New System.Drawing.Point(1181, 185)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(156, 92)
-        Me.Button1.TabIndex = 28
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.White
+        Me.Label8.Location = New System.Drawing.Point(1084, 306)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(193, 20)
+        Me.Label8.TabIndex = 28
+        Me.Label8.Text = "Select a Category first."
         '
         'Form14
         '
@@ -406,7 +409,7 @@ Partial Class Form14
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1924, 1061)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.LinkLabel5)
         Me.Controls.Add(Me.LinkLabel4)
         Me.Controls.Add(Me.LinkLabel3)
@@ -434,6 +437,7 @@ Partial Class Form14
         Me.Controls.Add(Me.CheckedListBox1)
         Me.Controls.Add(Me.btnAdd)
         Me.DoubleBuffered = True
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form14"
         Me.Text = "Form14"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
@@ -468,5 +472,5 @@ Partial Class Form14
     Friend WithEvents LinkLabel3 As LinkLabel
     Friend WithEvents LinkLabel4 As LinkLabel
     Friend WithEvents LinkLabel5 As LinkLabel
-    Friend WithEvents Button1 As Button
+    Friend WithEvents Label8 As Label
 End Class

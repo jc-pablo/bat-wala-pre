@@ -3,8 +3,6 @@
         Form11.Show()
         Me.Hide()
     End Sub
-
-
     Private Sub LinkLabel5_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel5.LinkClicked
         Form3.Show()
         Me.Hide()
@@ -14,11 +12,6 @@
         Form4.Show()
         Me.Hide()
     End Sub
-
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
-
-    End Sub
-
     Private Sub LinkLabel3_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel3.LinkClicked
         Form12.Show()
         Me.Hide()
@@ -28,18 +21,13 @@
         Form13.Show()
         Me.Hide()
     End Sub
-
-    Private Sub Form10_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
     Private Sub LinkLabel6_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel6.LinkClicked
         Form6.Show()
         Me.Hide()
     End Sub
 
     Private Sub LinkLabel7_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel7.LinkClicked
-        Form8.Show()
+        Form2.Show()
         Me.Hide()
     End Sub
 

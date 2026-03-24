@@ -26,10 +26,7 @@
 
         MessageBox.Show("Proceeding...", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
-        Form3.Show()
+        Form8.Show()
         Me.Hide()
-    End Sub
-    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
     End Sub
 End Class

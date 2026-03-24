@@ -510,6 +510,7 @@ Partial Class Form26
         Me.Controls.Add(Me.RadioButton1)
         Me.Controls.Add(Me.Label1)
         Me.DoubleBuffered = True
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form26"
         Me.Text = "Form26"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

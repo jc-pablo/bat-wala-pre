@@ -178,7 +178,7 @@ Partial Class Form3
         Me.TableLayoutPanel3.ColumnCount = 3
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98.09384!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.906158!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 28.0!))
         Me.TableLayoutPanel3.Controls.Add(Me.TableLayoutPanel4, 0, 0)
         Me.TableLayoutPanel3.Controls.Add(Me.TableLayoutPanel6, 0, 2)
         Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
@@ -207,7 +207,7 @@ Partial Class Form3
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.29572!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53.50195!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.39689!))
-        Me.TableLayoutPanel4.Size = New System.Drawing.Size(1837, 547)
+        Me.TableLayoutPanel4.Size = New System.Drawing.Size(1836, 547)
         Me.TableLayoutPanel4.TabIndex = 0
         '
         'PictureBox1
@@ -218,7 +218,7 @@ Partial Class Form3
         Me.PictureBox1.Location = New System.Drawing.Point(159, 178)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(1585, 288)
+        Me.PictureBox1.Size = New System.Drawing.Size(1584, 288)
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
@@ -243,7 +243,7 @@ Partial Class Form3
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.61905!))
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57.73809!))
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.64286!))
-        Me.TableLayoutPanel6.Size = New System.Drawing.Size(1837, 138)
+        Me.TableLayoutPanel6.Size = New System.Drawing.Size(1836, 138)
         Me.TableLayoutPanel6.TabIndex = 1
         '
         'PictureBox2
@@ -307,6 +307,7 @@ Partial Class Form3
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form3"
         Me.Text = "Form3"

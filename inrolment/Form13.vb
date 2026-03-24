@@ -1,62 +1,129 @@
-﻿Public Class Form13
-    Private Sub btnCompute_Click(sender As Object, e As EventArgs) Handles btnCompute.Click
-        Dim total As Decimal = 0
-
-        For i As Integer = 0 To ListBox1.Items.Count - 1
-
-            Dim itemText As String = ListBox1.Items(i).ToString()
-            Dim parts() As String = itemText.Split("x")
-            Dim item As String = parts(0).Trim()
-            Dim qty As Integer = CInt(parts(1).Trim())
-
-            If item.Contains("AU Notebook") Then
-                total += (120 * qty)
-            ElseIf item.Contains("AU Planner") Then
-                total += (300 * qty)
-            ElseIf item.Contains("AU Sticky Notes") Then
-                total += (80 * qty)
-            ElseIf item.Contains("AU Eraser") Then
-                total += (20 * qty)
-            ElseIf item.Contains("AU Pad Paper") Then
-                total += (50 * qty)
-            ElseIf item.Contains("AU Pencil") Then
-                total += (15 * qty)
-            ElseIf item.Contains("AU Ballpen") Then
-                total += (18 * qty)
-            End If
-
-        Next
-
-        lblTotal.Text = "₱ " & total.ToString("#,##0.00")
+﻿Imports System.Data.SqlClient
+Imports System.IO
+Public Class Form13
+    Dim connString As String = "Data Source=DESKTOP-EBN38MA;Initial Catalog=StoreDB;Integrated Security=True"
+    Public Sub LoadStationeryItems()
+        flpStationery.Controls.Clear()
+        Using conn As New SqlConnection(connString)
+            Dim cmd As New SqlCommand("SELECT ItemName, ItemPrice FROM Products WHERE Category = 'Stationery'", conn)
+            conn.Open()
+            Dim reader = cmd.ExecuteReader()
+            While reader.Read()
+                Dim chk As New CheckBox With {
+                .Text = reader("ItemName").ToString() & " (₱" & reader("ItemPrice").ToString() & ")",
+                .AutoSize = True,
+                .ForeColor = Color.White,
+                .Tag = reader("ItemPrice")
+            }
+                flpStationery.Controls.Add(chk)
+            End While
+        End Using
     End Sub
+    Private Sub Form13_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LoadStationeryItems()
+    End Sub
+
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         Dim qty As Integer
         If Not Integer.TryParse(txtQty.Text, qty) Then qty = 1
 
-        If CheckBox16.Checked Then
-            ListBox1.Items.Add("AU Notebook x" & qty)
+        For Each ctrl As Control In flpStationery.Controls
+            If TypeOf ctrl Is CheckBox Then
+                Dim chk = DirectCast(ctrl, CheckBox)
+                If chk.Checked Then
+                    ListBox1.Items.Add(chk.Text & " x" & qty)
+                    chk.Checked = False
+                End If
+            End If
+        Next
+    End Sub
+    Private Sub btnCompute_Click(sender As Object, e As EventArgs) Handles btnCompute.Click
+        If ListBox1.Items.Count = 0 Then
+            MessageBox.Show("Please add items to the cart first before computing.", "Empty Cart", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
         End If
-        If CheckBox14.Checked Then
-            ListBox1.Items.Add("AU Planner x" & qty)
-        End If
-        If CheckBox15.Checked Then
-            ListBox1.Items.Add("AU Sticky Notes x" & qty)
-        End If
-        If CheckBox13.Checked Then
-            ListBox1.Items.Add("AU Eraser x" & qty)
-        End If
-        If CheckBox12.Checked Then
-            ListBox1.Items.Add("AU Pad Paper x" & qty)
-        End If
-        If CheckBox11.Checked Then
-            ListBox1.Items.Add("AU Pencil x" & qty)
-        End If
-        If CheckBox10.Checked Then
-            ListBox1.Items.Add("AU Ballpen x" & qty)
+        Dim total As Decimal = 0
+
+        For Each item As String In ListBox1.Items
+            Try
+                Dim startPrice As Integer = item.IndexOf("₱") + 1
+                Dim endPrice As Integer = item.IndexOf(")")
+                Dim pricePart As Decimal = CDec(item.Substring(startPrice, endPrice - startPrice))
+                Dim qtyPart As Integer = CInt(item.Split("x").Last().Trim())
+
+                total += (pricePart * qtyPart)
+            Catch ex As Exception
+            End Try
+        Next
+
+        lblTotal.Text = "₱ " & total.ToString("#,##0.00")
+    End Sub
+
+    Private Sub btnPay_Click(sender As Object, e As EventArgs) Handles btnPay.Click
+        Dim amountPaid As Decimal = 0
+        Dim totalDue As Decimal = 0
+        Dim cleanTotal As String = lblTotal.Text.Replace("₱ ", "").Replace(",", "")
+
+        If Decimal.TryParse(cleanTotal, totalDue) Then
+            If Decimal.TryParse(txtAmountTendered.Text, amountPaid) Then
+                If amountPaid >= totalDue Then
+                    Dim change As Decimal = amountPaid - totalDue
+                    lblChange.Text = "₱ " & change.ToString("#,##0.00")
+                    MessageBox.Show("Payment Successful!", "Success")
+                Else
+                    MessageBox.Show("Insufficient Payment.", "Error")
+                End If
+            End If
         End If
     End Sub
 
+    Private Sub GenerateReceipt()
+        Dim receiptText As String = "ARELLANO STATIONERY SHOP" & vbCrLf &
+                                "Official Receipt" & vbCrLf &
+                                "----------------------------" & vbCrLf &
+                                "Items:" & vbCrLf
+        For Each item In ListBox1.Items
+            receiptText &= " > " & item.ToString() & vbCrLf
+        Next
+
+        receiptText &= "----------------------------" & vbCrLf &
+                   "Total Due: " & lblTotal.Text & vbCrLf &
+                   "Cash:      ₱ " & CDec(txtAmountTendered.Text).ToString("#,##0.00") & vbCrLf &
+                   "Change:    " & lblChange.Text & vbCrLf &
+                   "----------------------------" & vbCrLf &
+                   "Date: " & DateTime.Now.ToString() & vbCrLf &
+                   "============================" & vbCrLf
+
+        Dim fileNum As Integer = FreeFile()
+        Try
+            FileOpen(fileNum, "ShopReceipts.txt", OpenMode.Append)
+            PrintLine(fileNum, receiptText)
+            FileClose(fileNum)
+            l.receiptText = receiptText
+
+            Form29.Resibo.Text = l.receiptText
+            Form29.Show()
+
+        Catch ex As Exception
+            FileClose(fileNum)
+            MessageBox.Show("Error saving receipt: " & ex.Message)
+        End Try
+    End Sub
+    Private Sub btnResip_Click(sender As Object, e As EventArgs) Handles btnResip.Click
+        GenerateReceipt()
+    End Sub
+    Private Sub btnClearFile_Click(sender As Object, e As EventArgs) Handles btnClearFile.Click
+        Dim fileNum As Integer = FreeFile()
+        Try
+            FileOpen(fileNum, "ShopReceipts.txt", OpenMode.Output)
+            FileClose(fileNum)
+
+            MessageBox.Show("All records have been deleted!", "File Cleared")
+        Catch ex As Exception
+            MessageBox.Show("Error clearing file: " & ex.Message)
+        End Try
+    End Sub
     Private Sub btnRemove_Click(sender As Object, e As EventArgs) Handles btnRemove.Click
         If ListBox1.SelectedIndex <> -1 Then
             ListBox1.Items.RemoveAt(ListBox1.SelectedIndex)
@@ -73,25 +140,18 @@
         txtQty.Text = "1"
     End Sub
 
-    Private Sub btnPay_Click(sender As Object, e As EventArgs) Handles btnPay.Click
-        Dim amountPaid As Decimal = 0
-        Dim totalDue As Decimal = 0
-        Dim cleanTotal As String = lblTotal.Text.Replace("₱ ", "").Replace(",", "")
-
-        If Decimal.TryParse(cleanTotal, totalDue) Then
-            If Decimal.TryParse(txtAmountTendered.Text, amountPaid) Then
-                If amountPaid >= totalDue Then
-                    Dim change As Decimal = amountPaid - totalDue
-                    lblChange.Text = "₱ " & change.ToString("#,##0.00")
-                    MessageBox.Show("Payment Successful!", "Success")
-                Else
-                    MessageBox.Show("Kulang ang iyong bayad.", "Error")
-                End If
-            End If
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim pass As String = "admin123"
+        Dim adminInput As String = InputBox("Please enter the admin password:", "Security Check")
+        If adminInput = pass Then
+            MessageBox.Show("Access Granted!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Form30.Show()
+            Me.Hide()
+        ElseIf adminInput = "" Then
+            Exit Sub
+        Else
+            MessageBox.Show("Incorrect Password. Access denied", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
-    End Sub
-
-    Private Sub Panel4_Paint(sender As Object, e As PaintEventArgs) Handles Panel4.Paint
 
     End Sub
 
@@ -106,7 +166,7 @@
     End Sub
 
     Private Sub LinkLabel4_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel4.LinkClicked
-        Form8.Show()
+        Form2.Show()
         Me.Hide()
     End Sub
 
@@ -114,8 +174,8 @@
         Form10.Show()
         Me.Hide()
     End Sub
-
-    Private Sub Form13_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+    Private Sub LinkLabel5_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel5.LinkClicked
+        Form14.Show()
+        Me.Hide()
     End Sub
 End Class

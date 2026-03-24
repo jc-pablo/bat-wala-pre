@@ -120,7 +120,7 @@ Partial Class Form22
         Me.LinkLabel4.BackColor = System.Drawing.Color.Transparent
         Me.LinkLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel4.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel4.Location = New System.Drawing.Point(1401, 89)
+        Me.LinkLabel4.Location = New System.Drawing.Point(1413, 89)
         Me.LinkLabel4.Name = "LinkLabel4"
         Me.LinkLabel4.Size = New System.Drawing.Size(192, 25)
         Me.LinkLabel4.TabIndex = 7
@@ -156,6 +156,7 @@ Partial Class Form22
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.DoubleBuffered = True
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form22"
         Me.Text = "Form22"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

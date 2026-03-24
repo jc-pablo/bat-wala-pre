@@ -50,18 +50,19 @@ Partial Class Form2
         Me.TableLayoutPanel1.ColumnCount = 3
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.14111!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.85889!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 15.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel2, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel3, 1, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel4, 1, 2)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 3
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.81503!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 66.18497!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 177.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1924, 1055)
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 144.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1443, 857)
         Me.TableLayoutPanel1.TabIndex = 0
         '
         'TableLayoutPanel2
@@ -76,7 +77,8 @@ Partial Class Form2
         Me.TableLayoutPanel2.Controls.Add(Me.Label1, 1, 1)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(3, 299)
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(2, 243)
+        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 7
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.17665!))
@@ -86,7 +88,7 @@ Partial Class Form2
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.59296!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.84422!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.56281!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(739, 575)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(554, 467)
         Me.TableLayoutPanel2.TabIndex = 0
         '
         'Label2
@@ -96,9 +98,10 @@ Partial Class Form2
         Me.Label2.Font = New System.Drawing.Font("Nirmala Text", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.ImageAlign = System.Drawing.ContentAlignment.TopRight
-        Me.Label2.Location = New System.Drawing.Point(332, 107)
+        Me.Label2.Location = New System.Drawing.Point(249, 87)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(404, 98)
+        Me.Label2.Size = New System.Drawing.Size(303, 80)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Gender:"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -109,9 +112,10 @@ Partial Class Form2
         Me.Label3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label3.Font = New System.Drawing.Font("Nirmala Text", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(332, 205)
+        Me.Label3.Location = New System.Drawing.Point(249, 167)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(404, 84)
+        Me.Label3.Size = New System.Drawing.Size(303, 68)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Birthdate:"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -123,9 +127,10 @@ Partial Class Form2
         Me.Label4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label4.Font = New System.Drawing.Font("Nirmala Text", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(332, 289)
+        Me.Label4.Location = New System.Drawing.Point(249, 235)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(404, 105)
+        Me.Label4.Size = New System.Drawing.Size(303, 85)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Grade Level:"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -136,9 +141,10 @@ Partial Class Form2
         Me.Label5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label5.Font = New System.Drawing.Font("Nirmala Text", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(332, 394)
+        Me.Label5.Location = New System.Drawing.Point(249, 320)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(404, 107)
+        Me.Label5.Size = New System.Drawing.Size(303, 86)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Contact Number:"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -150,9 +156,10 @@ Partial Class Form2
         Me.Label1.Font = New System.Drawing.Font("Nirmala Text", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Label1.Location = New System.Drawing.Point(332, 23)
+        Me.Label1.Location = New System.Drawing.Point(249, 19)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(404, 84)
+        Me.Label1.Size = New System.Drawing.Size(303, 68)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Applicant Name:"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -168,7 +175,8 @@ Partial Class Form2
         Me.TableLayoutPanel3.Controls.Add(Me.TextBox4, 0, 6)
         Me.TableLayoutPanel3.Controls.Add(Me.TextBox1, 0, 2)
         Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel3.Location = New System.Drawing.Point(748, 299)
+        Me.TableLayoutPanel3.Location = New System.Drawing.Point(560, 243)
+        Me.TableLayoutPanel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 8
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.978774!))
@@ -179,47 +187,52 @@ Partial Class Form2
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.6087!))
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.69565!))
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.71874!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(1152, 575)
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(865, 467)
         Me.TableLayoutPanel3.TabIndex = 1
         '
         'TextBox2
         '
         Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(3, 146)
+        Me.TextBox2.Location = New System.Drawing.Point(2, 117)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(238, 26)
+        Me.TextBox2.Size = New System.Drawing.Size(180, 26)
         Me.TextBox2.TabIndex = 1
         '
         'DateTimePicker1
         '
         Me.DateTimePicker1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePicker1.Location = New System.Drawing.Point(3, 237)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(2, 191)
+        Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(347, 26)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(261, 26)
         Me.DateTimePicker1.TabIndex = 2
         '
         'TextBox3
         '
         Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(3, 332)
+        Me.TextBox3.Location = New System.Drawing.Point(2, 268)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(150, 26)
+        Me.TextBox3.Size = New System.Drawing.Size(114, 26)
         Me.TextBox3.TabIndex = 3
         '
         'TextBox4
         '
         Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(3, 439)
+        Me.TextBox4.Location = New System.Drawing.Point(2, 355)
+        Me.TextBox4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(265, 26)
+        Me.TextBox4.Size = New System.Drawing.Size(200, 26)
         Me.TextBox4.TabIndex = 4
         '
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(3, 59)
+        Me.TextBox1.Location = New System.Drawing.Point(2, 47)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(529, 26)
+        Me.TextBox1.Size = New System.Drawing.Size(398, 26)
         Me.TextBox1.TabIndex = 5
         '
         'TableLayoutPanel4
@@ -230,13 +243,14 @@ Partial Class Form2
         Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.25347!))
         Me.TableLayoutPanel4.Controls.Add(Me.Button1, 1, 1)
         Me.TableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel4.Location = New System.Drawing.Point(748, 880)
+        Me.TableLayoutPanel4.Location = New System.Drawing.Point(560, 714)
+        Me.TableLayoutPanel4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TableLayoutPanel4.Name = "TableLayoutPanel4"
         Me.TableLayoutPanel4.RowCount = 3
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.18182!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.46511!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.51163!))
-        Me.TableLayoutPanel4.Size = New System.Drawing.Size(1152, 172)
+        Me.TableLayoutPanel4.Size = New System.Drawing.Size(865, 141)
         Me.TableLayoutPanel4.TabIndex = 2
         '
         'Button1
@@ -245,21 +259,24 @@ Partial Class Form2
         Me.Button1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Button1.Font = New System.Drawing.Font("Nirmala Text", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(27, 34)
+        Me.Button1.Location = New System.Drawing.Point(20, 27)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(208, 54)
+        Me.Button1.Size = New System.Drawing.Size(157, 45)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Proceed"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Form2
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1924, 1055)
+        Me.ClientSize = New System.Drawing.Size(1443, 857)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Form2"
         Me.Text = "Form2"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

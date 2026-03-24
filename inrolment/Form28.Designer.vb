@@ -328,7 +328,7 @@ Partial Class Form28
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(240, 47)
         Me.Button12.TabIndex = 31
-        Me.Button12.Text = "PartTimers"
+        Me.Button12.Text = "Part Timers"
         Me.Button12.UseVisualStyleBackColor = True
         '
         'txtReason
@@ -442,6 +442,7 @@ Partial Class Form28
         Me.Controls.Add(Me.CheckedListBox1)
         Me.Controls.Add(Me.BtnKinder)
         Me.DoubleBuffered = True
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form28"
         Me.Text = "Form28"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

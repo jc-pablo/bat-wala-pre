@@ -2,6 +2,10 @@
 
 Public Class Form27
     Private Sub btnCompute_Click(sender As Object, e As EventArgs) Handles btnCompute.Click
+        If ListBox1.Items.Count = 0 Then
+            MessageBox.Show("Please add items to the cart first before computing.", "Empty Cart", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End If
         Dim total As Decimal = 0
 
         For i As Integer = 0 To ListBox1.Items.Count - 1
@@ -121,12 +125,70 @@ Public Class Form27
                     lblChange.Text = "₱ " & change.ToString("#,##0.00")
                     MessageBox.Show("Payment Successful!", "Success")
                 Else
-                    MessageBox.Show("Kulang ang iyong bayad.", "Error")
+                    MessageBox.Show("Insufficient Payment.", "Error")
                 End If
             End If
         End If
     End Sub
+    Private Sub GenerateReceipt()
+        Dim receiptText As String = "ARELLANO EXTRACURRICULAR SHOP" & vbCrLf &
+                                "Official Receipt" & vbCrLf &
+                                "----------------------------" & vbCrLf &
+                                "Items:" & vbCrLf
+        For Each item In ListBox1.Items
+            receiptText &= " > " & item.ToString() & vbCrLf
+        Next
 
+        receiptText &= "----------------------------" & vbCrLf &
+                   "Total Due: " & lblTotal.Text & vbCrLf &
+                   "Cash:      ₱ " & CDec(txtAmountTendered.Text).ToString("#,##0.00") & vbCrLf &
+                   "Change:    " & lblChange.Text & vbCrLf &
+                   "----------------------------" & vbCrLf &
+                   "Date: " & DateTime.Now.ToString() & vbCrLf &
+                   "============================" & vbCrLf
+
+        Dim fileNum As Integer = FreeFile()
+        Try
+            FileOpen(fileNum, "ShopReceipts.txt", OpenMode.Append)
+            PrintLine(fileNum, receiptText)
+            FileClose(fileNum)
+            l.receiptText = receiptText
+
+            Form29.Resibo.Text = l.receiptText
+            Form29.Show()
+
+        Catch ex As Exception
+            FileClose(fileNum)
+            MessageBox.Show("Error saving receipt: " & ex.Message)
+        End Try
+    End Sub
+    Private Sub btnResip_Click(sender As Object, e As EventArgs) Handles btnResip.Click
+        GenerateReceipt()
+    End Sub
+    Private Sub btnClearFile_Click(sender As Object, e As EventArgs) Handles btnClearFile.Click
+        Dim fileNum As Integer = FreeFile()
+        Try
+            FileOpen(fileNum, "ShopReceipts.txt", OpenMode.Output)
+            FileClose(fileNum)
+
+            MessageBox.Show("All records have been deleted!", "File Cleared")
+        Catch ex As Exception
+            MessageBox.Show("Error clearing file: " & ex.Message)
+        End Try
+    End Sub
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim pass As String = "admin123"
+        Dim adminInput As String = InputBox("Please enter the admin password:", "Security Check")
+        If adminInput = pass Then
+            MessageBox.Show("Access Granted!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Form30.Show()
+            Me.Hide()
+        ElseIf adminInput = "" Then
+            Exit Sub
+        Else
+            MessageBox.Show("Incorrect Password. Access denied", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
+    End Sub
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
         Form4.Show()
         Me.Hide()
@@ -155,4 +217,6 @@ Public Class Form27
     Private Sub Form27_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+
 End Class

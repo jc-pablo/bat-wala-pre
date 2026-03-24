@@ -60,6 +60,9 @@ Partial Class Form27
         Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnClearFile = New System.Windows.Forms.Button()
+        Me.btnResip = New System.Windows.Forms.Button()
         Me.Panel3.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel5.SuspendLayout()
@@ -522,6 +525,42 @@ Partial Class Form27
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "About Us"
         '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Silver
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(1537, 982)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(95, 37)
+        Me.Button1.TabIndex = 63
+        Me.Button1.Text = "ADMIN"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'btnClearFile
+        '
+        Me.btnClearFile.BackColor = System.Drawing.Color.Silver
+        Me.btnClearFile.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClearFile.ForeColor = System.Drawing.Color.White
+        Me.btnClearFile.Location = New System.Drawing.Point(1772, 980)
+        Me.btnClearFile.Name = "btnClearFile"
+        Me.btnClearFile.Size = New System.Drawing.Size(123, 39)
+        Me.btnClearFile.TabIndex = 65
+        Me.btnClearFile.Text = "CLEARFILE"
+        Me.btnClearFile.UseVisualStyleBackColor = False
+        '
+        'btnResip
+        '
+        Me.btnResip.BackColor = System.Drawing.Color.Silver
+        Me.btnResip.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnResip.ForeColor = System.Drawing.Color.White
+        Me.btnResip.Location = New System.Drawing.Point(1643, 980)
+        Me.btnResip.Name = "btnResip"
+        Me.btnResip.Size = New System.Drawing.Size(123, 39)
+        Me.btnResip.TabIndex = 64
+        Me.btnResip.Text = "RECEIPT"
+        Me.btnResip.UseVisualStyleBackColor = False
+        '
         'Form27
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -529,6 +568,9 @@ Partial Class Form27
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1924, 1061)
+        Me.Controls.Add(Me.btnClearFile)
+        Me.Controls.Add(Me.btnResip)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
@@ -553,6 +595,7 @@ Partial Class Form27
         Me.Controls.Add(Me.CheckBox21)
         Me.Controls.Add(Me.CheckBox22)
         Me.DoubleBuffered = True
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form27"
         Me.Text = "Form27"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
@@ -603,4 +646,7 @@ Partial Class Form27
     Friend WithEvents LinkLabel3 As LinkLabel
     Friend WithEvents LinkLabel2 As LinkLabel
     Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents Button1 As Button
+    Friend WithEvents btnClearFile As Button
+    Friend WithEvents btnResip As Button
 End Class

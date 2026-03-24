@@ -120,10 +120,10 @@ Partial Class Form10
         Me.LinkLabel7.LinkColor = System.Drawing.Color.White
         Me.LinkLabel7.Location = New System.Drawing.Point(1422, 81)
         Me.LinkLabel7.Name = "LinkLabel7"
-        Me.LinkLabel7.Size = New System.Drawing.Size(118, 26)
+        Me.LinkLabel7.Size = New System.Drawing.Size(182, 26)
         Me.LinkLabel7.TabIndex = 6
         Me.LinkLabel7.TabStop = True
-        Me.LinkLabel7.Text = "Enroll Now"
+        Me.LinkLabel7.Text = "Enroll && Activities"
         '
         'Panel1
         '
@@ -143,7 +143,7 @@ Partial Class Form10
         Me.LinkLabel8.BackColor = System.Drawing.Color.Transparent
         Me.LinkLabel8.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel8.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel8.Location = New System.Drawing.Point(1664, 81)
+        Me.LinkLabel8.Location = New System.Drawing.Point(1735, 81)
         Me.LinkLabel8.Name = "LinkLabel8"
         Me.LinkLabel8.Size = New System.Drawing.Size(78, 25)
         Me.LinkLabel8.TabIndex = 8
@@ -162,7 +162,9 @@ Partial Class Form10
         Me.Controls.Add(Me.LinkLabel6)
         Me.Controls.Add(Me.LinkLabel5)
         Me.Controls.Add(Me.LinkLabel4)
+        Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MinimizeBox = False
         Me.Name = "Form10"
         Me.Text = "Form10"

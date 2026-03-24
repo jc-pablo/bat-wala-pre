@@ -40,24 +40,9 @@ Partial Class Form12
         Me.txtQty = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.btnAdd = New System.Windows.Forms.Button()
-        Me.CheckBox10 = New System.Windows.Forms.CheckBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.CheckBox11 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox12 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox13 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox15 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox14 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox16 = New System.Windows.Forms.CheckBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.CheckBox8 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox7 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
+        Me.lblHoodie = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.LinkLabel5 = New System.Windows.Forms.LinkLabel()
@@ -65,6 +50,12 @@ Partial Class Form12
         Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnClearFile = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.flpShirts = New System.Windows.Forms.FlowLayoutPanel()
+        Me.flpHoodies = New System.Windows.Forms.FlowLayoutPanel()
+        Me.flpMerch = New System.Windows.Forms.FlowLayoutPanel()
         Me.Panel3.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -76,7 +67,7 @@ Partial Class Form12
         '
         Me.Panel3.BackColor = System.Drawing.Color.Transparent
         Me.Panel3.Controls.Add(Me.ListBox1)
-        Me.Panel3.Location = New System.Drawing.Point(1083, 805)
+        Me.Panel3.Location = New System.Drawing.Point(1063, 756)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(307, 188)
         Me.Panel3.TabIndex = 35
@@ -102,7 +93,7 @@ Partial Class Form12
         Me.Panel2.Controls.Add(Me.Label6)
         Me.Panel2.Controls.Add(Me.lblTotal)
         Me.Panel2.Controls.Add(Me.Label4)
-        Me.Panel2.Location = New System.Drawing.Point(1457, 805)
+        Me.Panel2.Location = New System.Drawing.Point(1429, 749)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(324, 191)
         Me.Panel2.TabIndex = 34
@@ -202,20 +193,14 @@ Partial Class Form12
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.Transparent
+        Me.Panel4.Controls.Add(Me.flpMerch)
         Me.Panel4.Controls.Add(Me.btnClear)
         Me.Panel4.Controls.Add(Me.btnRemove)
         Me.Panel4.Controls.Add(Me.txtQty)
         Me.Panel4.Controls.Add(Me.Label9)
         Me.Panel4.Controls.Add(Me.btnAdd)
-        Me.Panel4.Controls.Add(Me.CheckBox10)
         Me.Panel4.Controls.Add(Me.Label3)
-        Me.Panel4.Controls.Add(Me.CheckBox11)
-        Me.Panel4.Controls.Add(Me.CheckBox12)
-        Me.Panel4.Controls.Add(Me.CheckBox13)
-        Me.Panel4.Controls.Add(Me.CheckBox15)
-        Me.Panel4.Controls.Add(Me.CheckBox14)
-        Me.Panel4.Controls.Add(Me.CheckBox16)
-        Me.Panel4.Location = New System.Drawing.Point(1319, 221)
+        Me.Panel4.Location = New System.Drawing.Point(1319, 208)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(522, 521)
         Me.Panel4.TabIndex = 36
@@ -277,19 +262,6 @@ Partial Class Form12
         Me.btnAdd.Text = "Add To Cart"
         Me.btnAdd.UseVisualStyleBackColor = False
         '
-        'CheckBox10
-        '
-        Me.CheckBox10.AutoSize = True
-        Me.CheckBox10.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox10.ForeColor = System.Drawing.Color.White
-        Me.CheckBox10.Location = New System.Drawing.Point(162, 337)
-        Me.CheckBox10.Name = "CheckBox10"
-        Me.CheckBox10.Size = New System.Drawing.Size(189, 24)
-        Me.CheckBox10.TabIndex = 8
-        Me.CheckBox10.Text = "Arellano Tumbler ₱320"
-        Me.CheckBox10.UseVisualStyleBackColor = False
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -301,84 +273,6 @@ Partial Class Form12
         Me.Label3.Size = New System.Drawing.Size(211, 45)
         Me.Label3.TabIndex = 11
         Me.Label3.Text = "Merchandise"
-        '
-        'CheckBox11
-        '
-        Me.CheckBox11.AutoSize = True
-        Me.CheckBox11.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox11.ForeColor = System.Drawing.Color.White
-        Me.CheckBox11.Location = New System.Drawing.Point(162, 291)
-        Me.CheckBox11.Name = "CheckBox11"
-        Me.CheckBox11.Size = New System.Drawing.Size(176, 24)
-        Me.CheckBox11.TabIndex = 7
-        Me.CheckBox11.Text = "Arellano Socks ₱120"
-        Me.CheckBox11.UseVisualStyleBackColor = False
-        '
-        'CheckBox12
-        '
-        Me.CheckBox12.AutoSize = True
-        Me.CheckBox12.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox12.ForeColor = System.Drawing.Color.White
-        Me.CheckBox12.Location = New System.Drawing.Point(162, 244)
-        Me.CheckBox12.Name = "CheckBox12"
-        Me.CheckBox12.Size = New System.Drawing.Size(195, 24)
-        Me.CheckBox12.TabIndex = 6
-        Me.CheckBox12.Text = "Arellano Wristband ₱80"
-        Me.CheckBox12.UseVisualStyleBackColor = False
-        '
-        'CheckBox13
-        '
-        Me.CheckBox13.AutoSize = True
-        Me.CheckBox13.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox13.ForeColor = System.Drawing.Color.White
-        Me.CheckBox13.Location = New System.Drawing.Point(162, 198)
-        Me.CheckBox13.Name = "CheckBox13"
-        Me.CheckBox13.Size = New System.Drawing.Size(161, 24)
-        Me.CheckBox13.TabIndex = 3
-        Me.CheckBox13.Text = "Arellano Cap ₱250"
-        Me.CheckBox13.UseVisualStyleBackColor = False
-        '
-        'CheckBox15
-        '
-        Me.CheckBox15.AutoSize = True
-        Me.CheckBox15.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox15.ForeColor = System.Drawing.Color.White
-        Me.CheckBox15.Location = New System.Drawing.Point(162, 151)
-        Me.CheckBox15.Name = "CheckBox15"
-        Me.CheckBox15.Size = New System.Drawing.Size(245, 24)
-        Me.CheckBox15.TabIndex = 1
-        Me.CheckBox15.Text = "NCAA Arellano Facemask ₱90"
-        Me.CheckBox15.UseVisualStyleBackColor = False
-        '
-        'CheckBox14
-        '
-        Me.CheckBox14.AutoSize = True
-        Me.CheckBox14.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox14.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox14.ForeColor = System.Drawing.Color.White
-        Me.CheckBox14.Location = New System.Drawing.Point(162, 106)
-        Me.CheckBox14.Name = "CheckBox14"
-        Me.CheckBox14.Size = New System.Drawing.Size(211, 24)
-        Me.CheckBox14.TabIndex = 2
-        Me.CheckBox14.Text = "NCAA Arellano Mug ₱199"
-        Me.CheckBox14.UseVisualStyleBackColor = False
-        '
-        'CheckBox16
-        '
-        Me.CheckBox16.AutoSize = True
-        Me.CheckBox16.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox16.ForeColor = System.Drawing.Color.White
-        Me.CheckBox16.Location = New System.Drawing.Point(162, 63)
-        Me.CheckBox16.Name = "CheckBox16"
-        Me.CheckBox16.Size = New System.Drawing.Size(127, 24)
-        Me.CheckBox16.TabIndex = 0
-        Me.CheckBox16.Text = "Lanyard ₱100"
-        Me.CheckBox16.UseVisualStyleBackColor = False
         '
         'Label1
         '
@@ -392,136 +286,26 @@ Partial Class Form12
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "AU Shirts"
         '
-        'CheckBox1
+        'lblHoodie
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox1.ForeColor = System.Drawing.Color.White
-        Me.CheckBox1.Location = New System.Drawing.Point(43, 64)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(109, 24)
-        Me.CheckBox1.TabIndex = 0
-        Me.CheckBox1.Text = "Small ₱339"
-        Me.CheckBox1.UseVisualStyleBackColor = False
-        '
-        'CheckBox2
-        '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox2.ForeColor = System.Drawing.Color.White
-        Me.CheckBox2.Location = New System.Drawing.Point(43, 108)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(126, 24)
-        Me.CheckBox2.TabIndex = 1
-        Me.CheckBox2.Text = "Medium ₱400"
-        Me.CheckBox2.UseVisualStyleBackColor = False
-        '
-        'CheckBox3
-        '
-        Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox3.ForeColor = System.Drawing.Color.White
-        Me.CheckBox3.Location = New System.Drawing.Point(43, 153)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(111, 24)
-        Me.CheckBox3.TabIndex = 2
-        Me.CheckBox3.Text = "Large ₱520"
-        Me.CheckBox3.UseVisualStyleBackColor = False
-        '
-        'CheckBox4
-        '
-        Me.CheckBox4.AutoSize = True
-        Me.CheckBox4.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox4.ForeColor = System.Drawing.Color.White
-        Me.CheckBox4.Location = New System.Drawing.Point(43, 201)
-        Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(90, 24)
-        Me.CheckBox4.TabIndex = 3
-        Me.CheckBox4.Text = "XL ₱650"
-        Me.CheckBox4.UseVisualStyleBackColor = False
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Nirmala Text", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.Gold
-        Me.Label2.Location = New System.Drawing.Point(3, 260)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(186, 45)
-        Me.Label2.TabIndex = 5
-        Me.Label2.Text = "AU Hoodie"
-        '
-        'CheckBox8
-        '
-        Me.CheckBox8.AutoSize = True
-        Me.CheckBox8.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox8.ForeColor = System.Drawing.Color.White
-        Me.CheckBox8.Location = New System.Drawing.Point(43, 327)
-        Me.CheckBox8.Name = "CheckBox8"
-        Me.CheckBox8.Size = New System.Drawing.Size(109, 24)
-        Me.CheckBox8.TabIndex = 6
-        Me.CheckBox8.Text = "Small ₱990"
-        Me.CheckBox8.UseVisualStyleBackColor = False
-        '
-        'CheckBox7
-        '
-        Me.CheckBox7.AutoSize = True
-        Me.CheckBox7.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox7.ForeColor = System.Drawing.Color.White
-        Me.CheckBox7.Location = New System.Drawing.Point(43, 371)
-        Me.CheckBox7.Name = "CheckBox7"
-        Me.CheckBox7.Size = New System.Drawing.Size(139, 24)
-        Me.CheckBox7.TabIndex = 7
-        Me.CheckBox7.Text = "Medium ₱1,050"
-        Me.CheckBox7.UseVisualStyleBackColor = False
-        '
-        'CheckBox6
-        '
-        Me.CheckBox6.AutoSize = True
-        Me.CheckBox6.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox6.ForeColor = System.Drawing.Color.White
-        Me.CheckBox6.Location = New System.Drawing.Point(43, 416)
-        Me.CheckBox6.Name = "CheckBox6"
-        Me.CheckBox6.Size = New System.Drawing.Size(124, 24)
-        Me.CheckBox6.TabIndex = 8
-        Me.CheckBox6.Text = "Large ₱1,110"
-        Me.CheckBox6.UseVisualStyleBackColor = False
-        '
-        'CheckBox5
-        '
-        Me.CheckBox5.AutoSize = True
-        Me.CheckBox5.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox5.ForeColor = System.Drawing.Color.White
-        Me.CheckBox5.Location = New System.Drawing.Point(43, 464)
-        Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(103, 24)
-        Me.CheckBox5.TabIndex = 9
-        Me.CheckBox5.Text = "XL ₱1,200"
-        Me.CheckBox5.UseVisualStyleBackColor = False
+        Me.lblHoodie.AutoSize = True
+        Me.lblHoodie.BackColor = System.Drawing.Color.Transparent
+        Me.lblHoodie.Font = New System.Drawing.Font("Nirmala Text", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHoodie.ForeColor = System.Drawing.Color.Gold
+        Me.lblHoodie.Location = New System.Drawing.Point(3, 260)
+        Me.lblHoodie.Name = "lblHoodie"
+        Me.lblHoodie.Size = New System.Drawing.Size(186, 45)
+        Me.lblHoodie.TabIndex = 5
+        Me.lblHoodie.Text = "AU Hoodie"
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Transparent
-        Me.Panel1.Controls.Add(Me.CheckBox5)
-        Me.Panel1.Controls.Add(Me.CheckBox6)
-        Me.Panel1.Controls.Add(Me.CheckBox7)
-        Me.Panel1.Controls.Add(Me.CheckBox8)
-        Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Controls.Add(Me.CheckBox4)
-        Me.Panel1.Controls.Add(Me.CheckBox3)
-        Me.Panel1.Controls.Add(Me.CheckBox2)
-        Me.Panel1.Controls.Add(Me.CheckBox1)
+        Me.Panel1.Controls.Add(Me.flpHoodies)
+        Me.Panel1.Controls.Add(Me.flpShirts)
+        Me.Panel1.Controls.Add(Me.lblHoodie)
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Location = New System.Drawing.Point(1052, 221)
+        Me.Panel1.Location = New System.Drawing.Point(1052, 208)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(261, 520)
         Me.Panel1.TabIndex = 33
@@ -558,12 +342,12 @@ Partial Class Form12
         Me.LinkLabel4.BackColor = System.Drawing.Color.Transparent
         Me.LinkLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel4.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel4.Location = New System.Drawing.Point(712, 66)
+        Me.LinkLabel4.Location = New System.Drawing.Point(676, 66)
         Me.LinkLabel4.Name = "LinkLabel4"
-        Me.LinkLabel4.Size = New System.Drawing.Size(115, 25)
+        Me.LinkLabel4.Size = New System.Drawing.Size(179, 25)
         Me.LinkLabel4.TabIndex = 27
         Me.LinkLabel4.TabStop = True
-        Me.LinkLabel4.Text = "Enroll Now"
+        Me.LinkLabel4.Text = "Enroll && Activities"
         '
         'LinkLabel3
         '
@@ -604,6 +388,66 @@ Partial Class Form12
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "About Us"
         '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Silver
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(1657, 967)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(129, 37)
+        Me.Button1.TabIndex = 21
+        Me.Button1.Text = "RECEIPT"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'btnClearFile
+        '
+        Me.btnClearFile.BackColor = System.Drawing.Color.Silver
+        Me.btnClearFile.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClearFile.ForeColor = System.Drawing.Color.White
+        Me.btnClearFile.Location = New System.Drawing.Point(1792, 965)
+        Me.btnClearFile.Name = "btnClearFile"
+        Me.btnClearFile.Size = New System.Drawing.Size(123, 39)
+        Me.btnClearFile.TabIndex = 38
+        Me.btnClearFile.Text = "CLEARFILE"
+        Me.btnClearFile.UseVisualStyleBackColor = False
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.Silver
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.White
+        Me.Button2.Location = New System.Drawing.Point(1547, 965)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(95, 37)
+        Me.Button2.TabIndex = 39
+        Me.Button2.Text = "ADMIN"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'flpShirts
+        '
+        Me.flpShirts.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.flpShirts.Location = New System.Drawing.Point(13, 46)
+        Me.flpShirts.Name = "flpShirts"
+        Me.flpShirts.Size = New System.Drawing.Size(245, 211)
+        Me.flpShirts.TabIndex = 10
+        '
+        'flpHoodies
+        '
+        Me.flpHoodies.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.flpHoodies.Location = New System.Drawing.Point(14, 306)
+        Me.flpHoodies.Name = "flpHoodies"
+        Me.flpHoodies.Size = New System.Drawing.Size(244, 200)
+        Me.flpHoodies.TabIndex = 11
+        '
+        'flpMerch
+        '
+        Me.flpMerch.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.flpMerch.Location = New System.Drawing.Point(95, 48)
+        Me.flpMerch.Name = "flpMerch"
+        Me.flpMerch.Size = New System.Drawing.Size(325, 336)
+        Me.flpMerch.TabIndex = 32
+        '
         'Form12
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -611,14 +455,19 @@ Partial Class Form12
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1924, 1061)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btnClearFile)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel4)
         Me.DoubleBuffered = True
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form12"
         Me.Text = "Form12"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel3.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
@@ -649,24 +498,9 @@ Partial Class Form12
     Friend WithEvents txtQty As TextBox
     Friend WithEvents Label9 As Label
     Friend WithEvents btnAdd As Button
-    Friend WithEvents CheckBox10 As CheckBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents CheckBox11 As CheckBox
-    Friend WithEvents CheckBox12 As CheckBox
-    Friend WithEvents CheckBox13 As CheckBox
-    Friend WithEvents CheckBox15 As CheckBox
-    Friend WithEvents CheckBox14 As CheckBox
-    Friend WithEvents CheckBox16 As CheckBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents CheckBox3 As CheckBox
-    Friend WithEvents CheckBox4 As CheckBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents CheckBox8 As CheckBox
-    Friend WithEvents CheckBox7 As CheckBox
-    Friend WithEvents CheckBox6 As CheckBox
-    Friend WithEvents CheckBox5 As CheckBox
+    Friend WithEvents lblHoodie As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel5 As Panel
     Friend WithEvents LinkLabel4 As LinkLabel
@@ -674,4 +508,10 @@ Partial Class Form12
     Friend WithEvents LinkLabel2 As LinkLabel
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents LinkLabel5 As LinkLabel
+    Friend WithEvents Button1 As Button
+    Friend WithEvents btnClearFile As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents flpMerch As FlowLayoutPanel
+    Friend WithEvents flpHoodies As FlowLayoutPanel
+    Friend WithEvents flpShirts As FlowLayoutPanel
 End Class

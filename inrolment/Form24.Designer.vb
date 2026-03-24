@@ -89,7 +89,7 @@ Partial Class Form24
         Me.Button2.BackColor = System.Drawing.Color.SteelBlue
         Me.Button2.Font = New System.Drawing.Font("Nirmala Text", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(1699, 1564)
+        Me.Button2.Location = New System.Drawing.Point(1697, 1440)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(199, 64)
         Me.Button2.TabIndex = 19
@@ -348,6 +348,7 @@ Partial Class Form24
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.Panel1)
         Me.DoubleBuffered = True
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form24"
         Me.Text = "Form24"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

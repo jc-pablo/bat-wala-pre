@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form13
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,23 +20,17 @@ Partial Class Form13
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form13))
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.btnClear = New System.Windows.Forms.Button()
+        Me.flpStationery = New System.Windows.Forms.FlowLayoutPanel()
         Me.btnRemove = New System.Windows.Forms.Button()
         Me.txtQty = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.btnAdd = New System.Windows.Forms.Button()
-        Me.CheckBox10 = New System.Windows.Forms.CheckBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.CheckBox11 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox12 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox13 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox15 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox14 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox16 = New System.Windows.Forms.CheckBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
@@ -54,6 +48,9 @@ Partial Class Form13
         Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.btnResip = New System.Windows.Forms.Button()
+        Me.btnClearFile = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel4.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -64,19 +61,13 @@ Partial Class Form13
         '
         Me.Panel4.BackColor = System.Drawing.Color.Transparent
         Me.Panel4.Controls.Add(Me.btnClear)
+        Me.Panel4.Controls.Add(Me.flpStationery)
         Me.Panel4.Controls.Add(Me.btnRemove)
         Me.Panel4.Controls.Add(Me.txtQty)
         Me.Panel4.Controls.Add(Me.Label9)
         Me.Panel4.Controls.Add(Me.btnAdd)
-        Me.Panel4.Controls.Add(Me.CheckBox10)
         Me.Panel4.Controls.Add(Me.Label3)
-        Me.Panel4.Controls.Add(Me.CheckBox11)
-        Me.Panel4.Controls.Add(Me.CheckBox12)
-        Me.Panel4.Controls.Add(Me.CheckBox13)
-        Me.Panel4.Controls.Add(Me.CheckBox15)
-        Me.Panel4.Controls.Add(Me.CheckBox14)
-        Me.Panel4.Controls.Add(Me.CheckBox16)
-        Me.Panel4.Location = New System.Drawing.Point(1180, 228)
+        Me.Panel4.Location = New System.Drawing.Point(1169, 228)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(484, 521)
         Me.Panel4.TabIndex = 37
@@ -92,6 +83,15 @@ Partial Class Form13
         Me.btnClear.TabIndex = 31
         Me.btnClear.Text = "Clear All"
         Me.btnClear.UseVisualStyleBackColor = False
+        '
+        'flpStationery
+        '
+        Me.flpStationery.BackColor = System.Drawing.Color.Transparent
+        Me.flpStationery.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.flpStationery.Location = New System.Drawing.Point(95, 59)
+        Me.flpStationery.Name = "flpStationery"
+        Me.flpStationery.Size = New System.Drawing.Size(292, 309)
+        Me.flpStationery.TabIndex = 41
         '
         'btnRemove
         '
@@ -138,108 +138,17 @@ Partial Class Form13
         Me.btnAdd.Text = "Add To Cart"
         Me.btnAdd.UseVisualStyleBackColor = False
         '
-        'CheckBox10
-        '
-        Me.CheckBox10.AutoSize = True
-        Me.CheckBox10.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox10.ForeColor = System.Drawing.Color.White
-        Me.CheckBox10.Location = New System.Drawing.Point(192, 338)
-        Me.CheckBox10.Name = "CheckBox10"
-        Me.CheckBox10.Size = New System.Drawing.Size(141, 24)
-        Me.CheckBox10.TabIndex = 8
-        Me.CheckBox10.Text = "AU Ballpen ₱18"
-        Me.CheckBox10.UseVisualStyleBackColor = False
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Nirmala Text", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Gold
-        Me.Label3.Location = New System.Drawing.Point(176, 0)
+        Me.Label3.Location = New System.Drawing.Point(134, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(210, 45)
         Me.Label3.TabIndex = 11
         Me.Label3.Text = "STATIONERY"
-        '
-        'CheckBox11
-        '
-        Me.CheckBox11.AutoSize = True
-        Me.CheckBox11.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox11.ForeColor = System.Drawing.Color.White
-        Me.CheckBox11.Location = New System.Drawing.Point(192, 292)
-        Me.CheckBox11.Name = "CheckBox11"
-        Me.CheckBox11.Size = New System.Drawing.Size(130, 24)
-        Me.CheckBox11.TabIndex = 7
-        Me.CheckBox11.Text = "AU Pencil ₱15"
-        Me.CheckBox11.UseVisualStyleBackColor = False
-        '
-        'CheckBox12
-        '
-        Me.CheckBox12.AutoSize = True
-        Me.CheckBox12.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox12.ForeColor = System.Drawing.Color.White
-        Me.CheckBox12.Location = New System.Drawing.Point(192, 245)
-        Me.CheckBox12.Name = "CheckBox12"
-        Me.CheckBox12.Size = New System.Drawing.Size(162, 24)
-        Me.CheckBox12.TabIndex = 6
-        Me.CheckBox12.Text = "AU Pad Paper ₱50"
-        Me.CheckBox12.UseVisualStyleBackColor = False
-        '
-        'CheckBox13
-        '
-        Me.CheckBox13.AutoSize = True
-        Me.CheckBox13.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox13.ForeColor = System.Drawing.Color.White
-        Me.CheckBox13.Location = New System.Drawing.Point(192, 199)
-        Me.CheckBox13.Name = "CheckBox13"
-        Me.CheckBox13.Size = New System.Drawing.Size(135, 24)
-        Me.CheckBox13.TabIndex = 3
-        Me.CheckBox13.Text = "AU Eraser ₱20"
-        Me.CheckBox13.UseVisualStyleBackColor = False
-        '
-        'CheckBox15
-        '
-        Me.CheckBox15.AutoSize = True
-        Me.CheckBox15.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox15.ForeColor = System.Drawing.Color.White
-        Me.CheckBox15.Location = New System.Drawing.Point(192, 152)
-        Me.CheckBox15.Name = "CheckBox15"
-        Me.CheckBox15.Size = New System.Drawing.Size(176, 24)
-        Me.CheckBox15.TabIndex = 1
-        Me.CheckBox15.Text = "AU Sticky Notes ₱80"
-        Me.CheckBox15.UseVisualStyleBackColor = False
-        '
-        'CheckBox14
-        '
-        Me.CheckBox14.AutoSize = True
-        Me.CheckBox14.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox14.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox14.ForeColor = System.Drawing.Color.White
-        Me.CheckBox14.Location = New System.Drawing.Point(192, 107)
-        Me.CheckBox14.Name = "CheckBox14"
-        Me.CheckBox14.Size = New System.Drawing.Size(151, 24)
-        Me.CheckBox14.TabIndex = 2
-        Me.CheckBox14.Text = "AU Planner ₱300"
-        Me.CheckBox14.UseVisualStyleBackColor = False
-        '
-        'CheckBox16
-        '
-        Me.CheckBox16.AutoSize = True
-        Me.CheckBox16.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox16.ForeColor = System.Drawing.Color.White
-        Me.CheckBox16.Location = New System.Drawing.Point(192, 64)
-        Me.CheckBox16.Name = "CheckBox16"
-        Me.CheckBox16.Size = New System.Drawing.Size(166, 24)
-        Me.CheckBox16.TabIndex = 0
-        Me.CheckBox16.Text = "AU Notebook ₱120"
-        Me.CheckBox16.UseVisualStyleBackColor = False
         '
         'Panel3
         '
@@ -387,7 +296,7 @@ Partial Class Form13
         Me.LinkLabel5.BackColor = System.Drawing.Color.Transparent
         Me.LinkLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel5.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel5.Location = New System.Drawing.Point(940, 66)
+        Me.LinkLabel5.Location = New System.Drawing.Point(983, 66)
         Me.LinkLabel5.Name = "LinkLabel5"
         Me.LinkLabel5.Size = New System.Drawing.Size(78, 25)
         Me.LinkLabel5.TabIndex = 39
@@ -400,12 +309,12 @@ Partial Class Form13
         Me.LinkLabel4.BackColor = System.Drawing.Color.Transparent
         Me.LinkLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel4.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel4.Location = New System.Drawing.Point(707, 66)
+        Me.LinkLabel4.Location = New System.Drawing.Point(698, 66)
         Me.LinkLabel4.Name = "LinkLabel4"
-        Me.LinkLabel4.Size = New System.Drawing.Size(115, 25)
+        Me.LinkLabel4.Size = New System.Drawing.Size(179, 25)
         Me.LinkLabel4.TabIndex = 27
         Me.LinkLabel4.TabStop = True
-        Me.LinkLabel4.Text = "Enroll Now"
+        Me.LinkLabel4.Text = "Enroll && Activities"
         '
         'LinkLabel3
         '
@@ -446,6 +355,42 @@ Partial Class Form13
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "About Us"
         '
+        'btnResip
+        '
+        Me.btnResip.BackColor = System.Drawing.Color.Silver
+        Me.btnResip.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnResip.ForeColor = System.Drawing.Color.White
+        Me.btnResip.Location = New System.Drawing.Point(1679, 974)
+        Me.btnResip.Name = "btnResip"
+        Me.btnResip.Size = New System.Drawing.Size(95, 37)
+        Me.btnResip.TabIndex = 39
+        Me.btnResip.Text = "RECEIPT"
+        Me.btnResip.UseVisualStyleBackColor = False
+        '
+        'btnClearFile
+        '
+        Me.btnClearFile.BackColor = System.Drawing.Color.Silver
+        Me.btnClearFile.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClearFile.ForeColor = System.Drawing.Color.White
+        Me.btnClearFile.Location = New System.Drawing.Point(1789, 973)
+        Me.btnClearFile.Name = "btnClearFile"
+        Me.btnClearFile.Size = New System.Drawing.Size(123, 39)
+        Me.btnClearFile.TabIndex = 40
+        Me.btnClearFile.Text = "CLEARFILE"
+        Me.btnClearFile.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Silver
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(1558, 973)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(95, 37)
+        Me.Button1.TabIndex = 21
+        Me.Button1.Text = "ADMIN"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
         'Form13
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -453,11 +398,16 @@ Partial Class Form13
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1924, 1061)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnClearFile)
+        Me.Controls.Add(Me.btnResip)
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel4)
+        Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form13"
         Me.Text = "Form13"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
@@ -478,14 +428,7 @@ Partial Class Form13
     Friend WithEvents txtQty As TextBox
     Friend WithEvents Label9 As Label
     Friend WithEvents btnAdd As Button
-    Friend WithEvents CheckBox10 As CheckBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents CheckBox11 As CheckBox
-    Friend WithEvents CheckBox12 As CheckBox
-    Friend WithEvents CheckBox13 As CheckBox
-    Friend WithEvents CheckBox15 As CheckBox
-    Friend WithEvents CheckBox14 As CheckBox
-    Friend WithEvents CheckBox16 As CheckBox
     Friend WithEvents Panel3 As Panel
     Friend WithEvents ListBox1 As ListBox
     Friend WithEvents Panel2 As Panel
@@ -503,4 +446,8 @@ Partial Class Form13
     Friend WithEvents LinkLabel2 As LinkLabel
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents LinkLabel5 As LinkLabel
+    Friend WithEvents btnResip As Button
+    Friend WithEvents btnClearFile As Button
+    Friend WithEvents flpStationery As FlowLayoutPanel
+    Friend WithEvents Button1 As Button
 End Class

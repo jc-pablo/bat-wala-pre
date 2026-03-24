@@ -263,7 +263,7 @@
     End Sub
 
     Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
-        Form5.Show()
+        Form10.Show()
         Me.Hide()
     End Sub
 
@@ -273,7 +273,7 @@
     End Sub
 
     Private Sub LinkLabel4_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel4.LinkClicked
-        Form8.Show()
+        Form2.Show()
         Me.Hide()
     End Sub
 
@@ -282,7 +282,7 @@
         Me.Hide()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         Form15.Show()
         Me.Hide()
     End Sub

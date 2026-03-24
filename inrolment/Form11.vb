@@ -1,104 +1,129 @@
-﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Header
+﻿Imports System.Data.SqlClient
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Header
 
 Public Class Form11
+    Dim connString As String = "Data Source=DESKTOP-EBN38MA;Initial Catalog=StoreDB;Integrated Security=True"
+    Public Sub LoadUniBooksItems()
+        flpRegular.Controls.Clear()
+        flpPE.Controls.Clear()
+        flpBooks.Controls.Clear()
 
+        Using conn As New SqlConnection(connString)
+            Dim cmd As New SqlCommand("SELECT ItemName, ItemPrice, SubCategory FROM Products WHERE Category IN ('Uniform', 'Books')", conn)
+            conn.Open()
+            Dim reader = cmd.ExecuteReader()
+
+            While reader.Read()
+                Dim subCat As String = reader("SubCategory").ToString()
+
+                Dim chk As New CheckBox With {
+                .Text = reader("ItemName").ToString() & " ₱" & CDec(reader("ItemPrice")).ToString("N0"),
+                .AutoSize = True,
+                .ForeColor = Color.White,
+                .Margin = New Padding(5),
+                .Tag = reader("ItemPrice")
+            }
+                If subCat = "Regular" Then
+                    flpRegular.Controls.Add(chk)
+                ElseIf subCat = "PE" Then
+                    flpPE.Controls.Add(chk)
+                ElseIf subCat = "Set" Then
+                    flpBooks.Controls.Add(chk)
+                End If
+            End While
+        End Using
+    End Sub
+    Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+        Dim qty As Integer = 1
+        If Not Integer.TryParse(txtQty.Text, qty) Then qty = 1
+        Dim panels() As FlowLayoutPanel = {flpRegular, flpPE, flpBooks}
+
+        For Each pnl In panels
+            For Each ctrl As Control In pnl.Controls
+                If TypeOf ctrl Is CheckBox Then
+                    Dim chk = DirectCast(ctrl, CheckBox)
+                    If chk.Checked Then
+                        ListBox1.Items.Add(chk.Text & " x" & qty)
+                        chk.Checked = False
+                    End If
+                End If
+            Next
+        Next
+    End Sub
     Private Sub btnCompute_Click(sender As Object, e As EventArgs) Handles btnCompute.Click
+        If ListBox1.Items.Count = 0 Then
+            MessageBox.Show("Please add items to the cart first before computing.", "Empty Cart", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End If
         Dim total As Decimal = 0
 
-        For i As Integer = 0 To ListBox1.Items.Count - 1
+        For Each item As String In ListBox1.Items
+            Try
+                Dim startPrice As Integer = item.IndexOf("₱") + 1
+                Dim endPrice As Integer = item.IndexOf(" x")
+                Dim pricePart As Decimal = CDec(item.Substring(startPrice, endPrice - startPrice))
+                Dim qtyPart As Integer = CInt(item.Split("x").Last().Trim())
 
-            Dim itemText As String = ListBox1.Items(i).ToString()
-            Dim parts() As String = itemText.Split("x")
-            Dim item As String = parts(0).Trim()
-            Dim qty As Integer = CInt(parts(1).Trim())
-
-
-
-            If item.Contains("Regular Uniform - Small") Then
-                total += (950 * qty)
-            ElseIf item.Contains("Regular Uniform - Medium") Then
-                total += (1050 * qty)
-            ElseIf item.Contains("Regular Uniform - Large") Then
-                total += (1150 * qty)
-            ElseIf item.Contains("Regular Uniform - XL") Then
-                total += (1250 * qty)
-            ElseIf item.Contains("PE Uniform - Small") Then
-                total += (650 * qty)
-            ElseIf item.Contains("PE Uniform - Medium") Then
-                total += (750 * qty)
-            ElseIf item.Contains("PE Uniform - Large") Then
-                total += (850 * qty)
-            ElseIf item.Contains("PE Uniform - XL") Then
-                total += (950 * qty)
-            ElseIf item.Contains("Kinder Set") Then
-                total += (3000 * qty)
-            ElseIf item.Contains("Grade 1 Set") Then
-                total += (4000 * qty)
-            ElseIf item.Contains("Grade 2 Set") Then
-                total += (4500 * qty)
-            ElseIf item.Contains("Grade 3 Set") Then
-                total += (4500 * qty)
-            ElseIf item.Contains("Grade 4 Set") Then
-                total += (4950 * qty)
-            ElseIf item.Contains("Grade 5 Set") Then
-                total += (5000 * qty)
-            ElseIf item.Contains("Grade 6 Set") Then
-                total += (5150 * qty)
-            End If
+                total += (pricePart * qtyPart)
+            Catch ex As Exception
+            End Try
         Next
 
         lblTotal.Text = "₱ " & total.ToString("#,##0.00")
     End Sub
-    Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
-        Dim qty As Integer
-        If Not Integer.TryParse(txtQty.Text, qty) Then qty = 1
-
-        If CheckBox1.Checked Then
-            ListBox1.Items.Add("Regular Uniform - Small x" & qty)
-        End If
-        If CheckBox2.Checked Then
-            ListBox1.Items.Add("Regular Uniform - Medium x" & qty)
-        End If
-        If CheckBox3.Checked Then
-            ListBox1.Items.Add("Regular Uniform - Large x" & qty)
-        End If
-        If CheckBox4.Checked Then
-            ListBox1.Items.Add("Regular Uniform - XL x" & qty)
-        End If
-        If CheckBox8.Checked Then
-            ListBox1.Items.Add("PE Uniform - Small x" & qty)
-        End If
-        If CheckBox7.Checked Then
-            ListBox1.Items.Add("PE Uniform - Medium x" & qty)
-        End If
-        If CheckBox6.Checked Then
-            ListBox1.Items.Add("PE Uniform - Large x" & qty)
-        End If
-        If CheckBox5.Checked Then
-            ListBox1.Items.Add("PE Uniform - XL x" & qty)
-        End If
-        If CheckBox16.Checked Then
-            ListBox1.Items.Add("Kinder Set x" & qty)
-        End If
-        If CheckBox14.Checked Then
-            ListBox1.Items.Add("Grade 1 Set x" & qty)
-        End If
-        If CheckBox15.Checked Then
-            ListBox1.Items.Add("Grade 2 Set x" & qty)
-        End If
-        If CheckBox13.Checked Then
-            ListBox1.Items.Add("Grade 3 Set x" & qty)
-        End If
-        If CheckBox12.Checked Then
-            ListBox1.Items.Add("Grade 4 Set x" & qty)
-        End If
-        If CheckBox11.Checked Then
-            ListBox1.Items.Add("Grade 5 Set x" & qty)
-        End If
-        If CheckBox10.Checked Then
-            ListBox1.Items.Add("Grade 6 Set x" & qty)
-        End If
+    Private Sub Form11_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LoadUniBooksItems()
     End Sub
+
+    Private Sub GenerateReceipt()
+        Dim receiptText As String = "ARELLANO UNIFORM & BOOKS SHOP" & vbCrLf &
+                                "Official Receipt" & vbCrLf &
+                                "----------------------------" & vbCrLf &
+                                "Items:" & vbCrLf
+        For Each item In ListBox1.Items
+            receiptText &= " > " & item.ToString() & vbCrLf
+        Next
+
+        receiptText &= "----------------------------" & vbCrLf &
+                   "Total Due: " & lblTotal.Text & vbCrLf &
+                   "Cash:      ₱ " & CDec(txtAmountTendered.Text).ToString("#,##0.00") & vbCrLf &
+                   "Change:    " & lblChange.Text & vbCrLf &
+                   "----------------------------" & vbCrLf &
+                   "Date: " & DateTime.Now.ToString() & vbCrLf &
+                   "============================" & vbCrLf
+
+        Dim fileNum As Integer = FreeFile()
+        Try
+            FileOpen(fileNum, "ShopReceipts.txt", OpenMode.Append)
+            PrintLine(fileNum, receiptText)
+            FileClose(fileNum)
+            l.receiptText = receiptText
+
+            Form29.Resibo.Text = l.receiptText
+            Form29.Show()
+
+        Catch ex As Exception
+            FileClose(fileNum)
+            MessageBox.Show("Error saving receipt: " & ex.Message)
+        End Try
+    End Sub
+    Private Sub btnResip_Click(sender As Object, e As EventArgs) Handles btnResip.Click
+        GenerateReceipt()
+    End Sub
+    Private Sub btnClearFile_Click(sender As Object, e As EventArgs) Handles btnClearFile.Click
+        Dim fileNum As Integer = FreeFile()
+        Try
+            FileOpen(fileNum, "ShopReceipts.txt", OpenMode.Output)
+            FileClose(fileNum)
+
+            MessageBox.Show("All records have been deleted!", "File Cleared")
+        Catch ex As Exception
+            MessageBox.Show("Error clearing file: " & ex.Message)
+        End Try
+    End Sub
+
+
+
     Private Sub btnRemove_Click(sender As Object, e As EventArgs) Handles btnRemove.Click
         If ListBox1.SelectedIndex <> -1 Then
             ListBox1.Items.RemoveAt(ListBox1.SelectedIndex)
@@ -106,6 +131,23 @@ Public Class Form11
             MessageBox.Show("Please select an item to first.")
         End If
 
+    End Sub
+    Private Sub btnPay_Click(sender As Object, e As EventArgs) Handles btnPay.Click
+        Dim amountPaid As Decimal = 0
+        Dim totalDue As Decimal = 0
+        Dim cleanTotal As String = lblTotal.Text.Replace("₱ ", "").Replace(",", "")
+
+        If Decimal.TryParse(cleanTotal, totalDue) Then
+            If Decimal.TryParse(txtAmountTendered.Text, amountPaid) Then
+                If amountPaid >= totalDue Then
+                    Dim change As Decimal = amountPaid - totalDue
+                    lblChange.Text = "₱ " & change.ToString("#,##0.00")
+                    MessageBox.Show("Payment Successful!", "Success")
+                Else
+                    MessageBox.Show("Insufficient Payment.", "Error")
+                End If
+            End If
+        End If
     End Sub
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         ListBox1.Items.Clear()
@@ -120,7 +162,7 @@ Public Class Form11
     End Sub
 
     Private Sub LinkLabel4_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel4.LinkClicked
-        Form8.Show()
+        Form2.Show()
         Me.Hide()
     End Sub
 
@@ -134,25 +176,24 @@ Public Class Form11
         Me.Hide()
     End Sub
 
-    Private Sub btnPay_Click(sender As Object, e As EventArgs) Handles btnPay.Click
-        Dim amountPaid As Decimal = 0
-        Dim totalDue As Decimal = 0
-        Dim cleanTotal As String = lblTotal.Text.Replace("₱ ", "").Replace(",", "")
-
-        If Decimal.TryParse(cleanTotal, totalDue) Then
-            If Decimal.TryParse(txtAmountTendered.Text, amountPaid) Then
-                If amountPaid >= totalDue Then
-                    Dim change As Decimal = amountPaid - totalDue
-                    lblChange.Text = "₱ " & change.ToString("#,##0.00")
-                    MessageBox.Show("Payment Successful!", "Success")
-                Else
-                    MessageBox.Show("Kulang ang iyong bayad.", "Error")
-                End If
-            End If
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim pass As String = "admin123"
+        Dim adminInput As String = InputBox("Please enter the admin password:", "Security Check")
+        If adminInput = pass Then
+            MessageBox.Show("Access Granted!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Form30.Show()
+            Me.Hide()
+        ElseIf adminInput = "" Then
+            Exit Sub
+        Else
+            MessageBox.Show("Incorrect Password. Access denied", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
     End Sub
 
-    Private Sub Form11_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+    Private Sub LinkLabel5_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel5.LinkClicked
+        Form14.Show()
+        Me.Hide()
     End Sub
+
+
 End Class

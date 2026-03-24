@@ -46,7 +46,7 @@ Public Class Form28
         G1Teachers(3) = "Mr. Fernando G. Garcia"
         G1Teachers(4) = "Ms. Maria Victoria L. Reyes "
 
-        G1Subs(0) = "Math 1"
+        G1Subs(0) = "Mathematics 1"
         G1Subs(1) = "English 1"
         G1Subs(2) = "Filipino 1 & Mother Tongue 1)"
         G1Subs(3) = "Araling Panlipunan 1"
@@ -59,11 +59,11 @@ Public Class Form28
         Next
 
         cmbSubjects.Items.Clear()
-        cmbSubjects.Items.Add("Mathematics 1")
-        cmbSubjects.Items.Add("English 1")
-        cmbSubjects.Items.Add("Filipino 1")
-        cmbSubjects.Items.Add("Araling Panlipunan 1")
-        cmbSubjects.Items.Add("MAPEH 1")
+        cmbSubjects.Items.Add("Basic Mathematics 1")
+        cmbSubjects.Items.Add("Reading Comprehension")
+        cmbSubjects.Items.Add("Aklat Filipino 1")
+        cmbSubjects.Items.Add("History 1")
+        cmbSubjects.Items.Add("Musical 1")
     End Sub
     Private Sub BtnGrade2_Click(sender As Object, e As EventArgs) Handles BtnGrade2.Click
         CheckedListBox1.Items.Clear()
@@ -89,11 +89,11 @@ Public Class Form28
         Next
 
         cmbSubjects.Items.Clear()
-        cmbSubjects.Items.Add("Math 1")
-        cmbSubjects.Items.Add("English 1")
-        cmbSubjects.Items.Add("Filipino 1")
-        cmbSubjects.Items.Add("Araling Panlipunan 1")
-        cmbSubjects.Items.Add("MAPEH 1")
+        cmbSubjects.Items.Add("Science 2")
+        cmbSubjects.Items.Add("Basic Mathematics 2")
+        cmbSubjects.Items.Add("Makabansa 2")
+        cmbSubjects.Items.Add("GMRC 2")
+        cmbSubjects.Items.Add("Values 2")
     End Sub
     Private Sub BtnGrade3_Click(sender As Object, e As EventArgs) Handles BtnGrade3.Click
         CheckedListBox1.Items.Clear()
@@ -121,11 +121,11 @@ Public Class Form28
         Next
 
         cmbSubjects.Items.Clear()
-        cmbSubjects.Items.Add("Math 1")
-        cmbSubjects.Items.Add("English 1")
-        cmbSubjects.Items.Add("Filipino 1")
-        cmbSubjects.Items.Add("Araling Panlipunan 1")
-        cmbSubjects.Items.Add("MAPEH 1")
+        cmbSubjects.Items.Add("Geometry 3")
+        cmbSubjects.Items.Add("Basic English 3")
+        cmbSubjects.Items.Add("GMRC 3")
+        cmbSubjects.Items.Add("Geography 3")
+        cmbSubjects.Items.Add("Health 3")
     End Sub
 
     Private Sub BtnGrade4_Click(sender As Object, e As EventArgs) Handles BtnGrade4.Click
@@ -156,11 +156,12 @@ Public Class Form28
         Next
 
         cmbSubjects.Items.Clear()
-        cmbSubjects.Items.Add("Math 1")
-        cmbSubjects.Items.Add("English 1")
-        cmbSubjects.Items.Add("Filipino 1")
-        cmbSubjects.Items.Add("Araling Panlipunan 1")
-        cmbSubjects.Items.Add("MAPEH 1")
+        cmbSubjects.Items.Add("EPP 4")
+        cmbSubjects.Items.Add("GMRC 4")
+        cmbSubjects.Items.Add("MATATAG 4")
+        cmbSubjects.Items.Add("TLE 4")
+        cmbSubjects.Items.Add("Agriculture 4")
+        cmbSubjects.Items.Add("Physical Education    4")
     End Sub
     Private Sub BtnGrade5_Click(sender As Object, e As EventArgs) Handles BtnGrade5.Click
         CheckedListBox1.Items.Clear()
@@ -190,11 +191,11 @@ Public Class Form28
         Next
 
         cmbSubjects.Items.Clear()
-        cmbSubjects.Items.Add("Math 1")
-        cmbSubjects.Items.Add("English 1")
-        cmbSubjects.Items.Add("Filipino 1")
-        cmbSubjects.Items.Add("Araling Panlipunan 1")
-        cmbSubjects.Items.Add("MAPEH 1")
+        cmbSubjects.Items.Add("Reading and Literacy 5")
+        cmbSubjects.Items.Add("Leanguage 5")
+        cmbSubjects.Items.Add("Makabansa 5")
+        cmbSubjects.Items.Add("GMRC 5")
+        cmbSubjects.Items.Add("Arts 5")
     End Sub
     Private Sub BtnGrade6_Click(sender As Object, e As EventArgs) Handles BtnGrade6.Click
         CheckedListBox1.Items.Clear()
@@ -224,11 +225,11 @@ Public Class Form28
         Next
 
         cmbSubjects.Items.Clear()
-        cmbSubjects.Items.Add("Math 1")
-        cmbSubjects.Items.Add("English 1")
-        cmbSubjects.Items.Add("Filipino 1")
-        cmbSubjects.Items.Add("Araling Panlipunan 1")
-        cmbSubjects.Items.Add("MAPEH 1")
+        cmbSubjects.Items.Add("Statistics 6")
+        cmbSubjects.Items.Add("ICT 6")
+        cmbSubjects.Items.Add("Literature 6")
+        cmbSubjects.Items.Add("Home Economics 6")
+        cmbSubjects.Items.Add("Communication 6")
     End Sub
 
     'DataGrid
@@ -296,12 +297,19 @@ Public Class Form28
     'Change Teachers
     Private Sub BtnChangeTeacher_Click(sender As Object, e As EventArgs) Handles BtnChangeTeacher.Click
         If String.IsNullOrWhiteSpace(txtReason.Text) Then
-            MsgBox("Please type a reason first (e.g. Absent)!")
+            MsgBox("Please type a reason first (e.g., On Leave, Sick, Meeting)!")
+            txtReason.Focus()
+            Return
+        End If
+
+        If palit = -1 Then
+            MsgBox("Please select a regular teacher from the list first.")
             Return
         End If
 
         If CheckedListBox1.Tag.ToString() = "Part Timer" Then
-            dgvFaculty.Rows(palit).Cells(3).Value = "Absent"
+            Dim userReason As String = txtReason.Text
+            dgvFaculty.Rows(palit).Cells(3).Value = userReason
             dgvFaculty.Rows(palit).DefaultCellStyle.BackColor = Color.MistyRose
             dgvFaculty.Rows(palit).Cells(3).Style.ForeColor = Color.Red
 
@@ -313,10 +321,12 @@ Public Class Form28
             Dim lastRowIndex As Integer = dgvFaculty.Rows.Count - 1
             dgvFaculty.Rows(lastRowIndex).DefaultCellStyle.BackColor = Color.LightCyan
             dgvFaculty.Rows(lastRowIndex).Cells(2).Style.ForeColor = Color.Blue
-            MsgBox("Successfully replaced with substitute teacher!")
+            MsgBox("Status updated to '" & userReason & "' and replacement assigned!")
 
             txtReason.Clear()
             palit = -1
+            TextBoxTeacher.Text = ""
+            TextBoxSubject.Text = ""
 
         Else
             MsgBox("Please click the 'Part-Timers' button first and select a substitute teacher.")
@@ -390,5 +400,29 @@ Public Class Form28
         Else
             MsgBox("Please select a full row in the DataGrid to remove.")
         End If
+    End Sub
+    Private Sub LinkLabel4_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel4.LinkClicked
+        Form8.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        Form4.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
+        Form10.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub LinkLabel3_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel3.LinkClicked
+        Form6.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub LinkLabel5_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel5.LinkClicked
+        Form14.Show()
+        Me.Hide()
     End Sub
 End Class

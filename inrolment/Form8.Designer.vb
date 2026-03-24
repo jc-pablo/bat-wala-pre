@@ -166,7 +166,7 @@ Partial Class Form8
         Me.TableLayoutPanel5.RowCount = 1
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 81.0!))
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 101.0!))
         Me.TableLayoutPanel5.Size = New System.Drawing.Size(1221, 101)
         Me.TableLayoutPanel5.TabIndex = 2
         '
@@ -894,6 +894,7 @@ Partial Class Form8
         Me.ClientSize = New System.Drawing.Size(1924, 1061)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.DoubleBuffered = True
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form8"
         Me.Text = "Form8"
