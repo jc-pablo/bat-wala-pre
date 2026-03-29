@@ -1,9 +1,7 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class Form30
-    Dim folderPath As String = Application.StartupPath
-    Dim dbFile As String = System.IO.Path.Combine(folderPath, "StoreDB.mdf")
-    Dim connString As String = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" & dbFile & ";Integrated Security=True;Connect Timeout=30"
+    Dim connString As String = "Data Source=(LocalDB)\MSSQLLocalDB;" & "AttachDbFilename=|DataDirectory|\StoreDB.mdf;" & "Integrated Security=True;" & "Connect Timeout=30"
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         If String.IsNullOrWhiteSpace(txtItemName.Text) OrElse
        String.IsNullOrWhiteSpace(txtItemPrice.Text) OrElse

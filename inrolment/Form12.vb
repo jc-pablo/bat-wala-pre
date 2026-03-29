@@ -1,9 +1,7 @@
 ﻿Imports System.IO
 Imports System.Data.SqlClient
 Public Class Form12
-    Dim folderPath As String = Application.StartupPath
-    Dim dbFile As String = System.IO.Path.Combine(folderPath, "StoreDB.mdf")
-    Dim connString As String = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" & dbFile & ";Integrated Security=True;Connect Timeout=30"
+    Dim connString As String = "Data Source=(LocalDB)\MSSQLLocalDB;" & "AttachDbFilename=|DataDirectory|\StoreDB.mdf;" & "Integrated Security=True;" & "Connect Timeout=30"
     Public Sub LoadMerchItems()
         flpShirts.Controls.Clear()
         flpHoodies.Controls.Clear()
@@ -183,7 +181,7 @@ Public Class Form12
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim pass As String = "admin123"
-        Dim adminInput As String = InputBox("Please enter the admin password:", "Security Check")
+        Dim adminInput As String = InputBox("Please enter the admin password: admin123", "Security Check")
         If adminInput = pass Then
             MessageBox.Show("Access Granted!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Form30.Show()
