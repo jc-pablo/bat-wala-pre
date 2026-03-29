@@ -1,7 +1,9 @@
 ﻿Imports System.Data.SqlClient
 Imports System.IO
 Public Class Form13
-    Dim connString As String = "Data Source=DESKTOP-EBN38MA;Initial Catalog=StoreDB;Integrated Security=True"
+    Dim folderPath As String = Application.StartupPath
+    Dim dbFile As String = System.IO.Path.Combine(folderPath, "StoreDB.mdf")
+    Dim connString As String = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" & dbFile & ";Integrated Security=True;Connect Timeout=30"
     Public Sub LoadStationeryItems()
         flpStationery.Controls.Clear()
         Using conn As New SqlConnection(connString)

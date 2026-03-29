@@ -2,7 +2,9 @@
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Header
 
 Public Class Form11
-    Dim connString As String = "Data Source=DESKTOP-EBN38MA;Initial Catalog=StoreDB;Integrated Security=True"
+    Dim folderPath As String = Application.StartupPath
+    Dim dbFile As String = System.IO.Path.Combine(folderPath, "StoreDB.mdf")
+    Dim connString As String = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" & dbFile & ";Integrated Security=True;Connect Timeout=30"
     Public Sub LoadUniBooksItems()
         flpRegular.Controls.Clear()
         flpPE.Controls.Clear()

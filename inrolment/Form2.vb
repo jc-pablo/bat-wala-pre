@@ -6,15 +6,15 @@
             Return
         End If
 
-        If String.IsNullOrWhiteSpace(TextBox2.Text) Then
+        If String.IsNullOrWhiteSpace(ComboBox1.Text) Then
             MessageBox.Show("Please enter the Gender.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            TextBox2.Focus()
+            ComboBox1.Focus()
             Return
         End If
 
-        If String.IsNullOrWhiteSpace(TextBox3.Text) Then
+        If String.IsNullOrWhiteSpace(ComboBox2.Text) Then
             MessageBox.Show("Please enter the Grade Level.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            TextBox3.Focus()
+            ComboBox2.Focus()
             Return
         End If
 
@@ -28,5 +28,9 @@
 
         Form8.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class
